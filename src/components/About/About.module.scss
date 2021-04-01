@@ -1,0 +1,24 @@
+// import global styles variables file
+@import "../../assets/styles/variables";
+
+// Responsive design
+
+// ultra-wide screen (for screens wider than desktop-breakpoint)
+@media screen and (min-width: $desktop-breakpoint) {
+  
+}
+
+// desktop
+@media screen and (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint){
+  
+}
+
+// Tablet
+@media screen and (min-width: $mob-breakpoint) and (max-width: $tablet-breakpoint){
+  
+}
+
+// mobile (below a certain width)
+@media screen and (max-width: $mob-breakpoint) {
+  
+}
