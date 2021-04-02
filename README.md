@@ -69,6 +69,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+### PROJECT PACKAGES ###
+
+### npm install sass
+
+install sass modules
+
 ### npm install react-router-dom
 
 React router is used to navigate and link between components
+
+### npm install framer-motion
+
+Install react animation library.
+This is imported for use. https://www.framer.com/api/motion/

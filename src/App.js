@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -29,7 +30,7 @@ function App() {
         </Route>
       </Switch>
     </Router>
-    
+   
   );
 }
 
