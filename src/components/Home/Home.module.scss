@@ -11,6 +11,10 @@
   width: 100vw;
 }
 
+header {
+  display: flex;
+}
+
 .main {
   grid-row-start: 3;
   grid-row-end: 4;
