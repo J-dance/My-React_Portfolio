@@ -1,20 +1,39 @@
 // import global styles variables file
 @import "../../assets/styles/variables";
 
-.page {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 50px 1fr 3fr;
+.nav {
+  grid-row-start: 1;
+  grid-row-end: 2;
 
-  height: 100vh;
-  width: 100vw;
+  position: relative;
 
-  .main {
-    grid-row-start: 3;
-    grid-row-end: 4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  border-bottom: 1px solid black;
+
+  .logo {
+    position: absolute;
+  }
+
+  .link {
+    text-decoration: none;
+    color: $my-black;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: auto;
+    text-decoration: none;
+
+    li {
+      display: inline;
+      margin: 80px;
+    }
   }
 }
 
