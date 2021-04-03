@@ -25,10 +25,15 @@ header {
 }
 
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
   background: $my-black;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  color: white;
+
 }
 
 // Responsive design
