@@ -26,3 +26,5 @@
 // this will be increased oscillations
 // transition properties can be used to alter keyframes e.g. transition: { yoyo: 10}
 // this makes a something repeat 10 times. yoyo: infinity -> infinite loop
+
+// animation routes: got to switch components in app

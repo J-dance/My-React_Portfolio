@@ -1,15 +1,22 @@
 import React from 'react'
 import NavBar from "../NavBar";
 import styles from "./Projects.module.scss";
+import { motion } from "framer-motion";
+import { componentTransition } from "../../variants";
 
 const Projects = () => {
   return (
-    <div className={styles.page}>
+    <motion.div className={styles.page}
+      variants={componentTransition}
+      initial='hidden'
+      animate='visible'
+      exit='exit'
+    >
       <NavBar />
       <main className={styles.main}>
         PROJECTS
       </main>
-    </div>
+    </motion.div>
   )
 }
 

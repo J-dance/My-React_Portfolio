@@ -1,15 +1,22 @@
 import React from 'react'
 import styles from './Contact.module.scss';
 import NavBar from "../NavBar";
+import { motion } from "framer-motion";
+import { componentTransition } from "../../variants";
 
 function Contact() {
   return (
-    <div className={styles.page}>
+    <motion.div className={styles.page}
+      variants={componentTransition}
+      initial='hidden'
+      animate='visible'
+      exit='exit'
+    >
       <NavBar />
       <main className={styles.main}>
         CONTACT
       </main>
-    </div>
+    </motion.div>
   )
 }
 
