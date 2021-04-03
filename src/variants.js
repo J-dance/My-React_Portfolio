@@ -10,35 +10,113 @@ export const introVariant = {
     y: 0
   },
   animate: {
-    width: [100, 100, 100, 150],
-    height: [100, 100, 100, 70],
-    scale: [1, 2, 2, 2],
-    x: [0, -200, -200, 150],
-    y: [0, -200, -200, -200],
-    borderRadius: ["50%", "50%", "50%", "30px"]
+    width: [100, 100, 100, 150, 150, 70, 70, 120, 120, 120, 120, 150, 150],
+    height: [100, 100, 100, 70, 70, 70, 70, 200, 200, 50, 50, 50, 50],
+    scale: [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+    x: [0, -200, -200, 150, 150, 150, 150, -200, -200, 0, 0, 30, 0],
+    y: [0, -200, -200, -200, -200, 0, 0, 0, 0, 0, 0, 0, 0],
+    borderRadius: ["50%", "50%", "50%", "30px", "30px", "50px", "50%", "30px", "30px", "30px", "30px", "30px", "30px"]
   }
   
 }
 
 export const hiVariant = {
   hidden: {
-    opacity: 0,
-    x: 40
+    opacity: 1,
+    x: -50,
+    y: -50
   },
   visible: {
-    opacity: [0, 1, 1, 0],
-    x: [40, 40, -100, -100]
+    opacity: [1, 1, 1, 0],
+    x: [-50, 0, 0, -100],
+    y: [-50, 0, 0, 0]
   }
 }
 
 export const nameVariant = {
   hidden: {
     opacity: 0,
-    x: 200
+    x: 0,
+    y: 0
   },
   visible: {
-    opacity: 1,
-    x: 0
+    opacity: [0, 1, 1, 0],
+    x: [200, 0, 0, 0],
+    y: [0, 0, 0, -100]
+  }
+}
+
+export const aVariant = {
+  hidden: {
+    opacity: 0,
+    x: -50,
+    y: 0
+  },
+  visible: {
+    opacity: [0, 1, 1, 0],
+    x: [0, 0, 0, 0],
+    y: [0, -50, -50, -50]
+  }
+}
+
+export const bristolVariant = {
+  hidden: {
+    opacity: 0,
+    x: 0,
+    y: 0
+  },
+  visible: {
+    opacity: [0, 1, 1, 0],
+    x: [0, 0, 0, 0],
+    y: [0, 0, 0, 0]
+  }
+}
+
+export const basedVariant = {
+  hidden: {
+    opacity: 0,
+    x: 0,
+    y: 0
+  },
+  visible: {
+    opacity: [0, 1, 1, 0],
+    x: [0, 0, 0, 0],
+    y: [0, 0, 0, 0]
+  }
+}
+
+export const softwareVariant = {
+  hidden: {
+    opacity: 0,
+    x: 0,
+    y: 0
+  },
+  visible: {
+    opacity: [0, 1, 1, 0],
+    x: [0, 0, 0, 0],
+    y: [0, 0, 0, 0]
+  }
+}
+
+export const developerVariant = {
+  hidden: {
+    opacity: 0,
+    x: 0,
+    y: 0
+  },
+  visible: {
+    opacity: [0, 1, 1, 1],
+    x: [0, 0, 0, 0],
+    y: [0, 0, 0, 0]
+  }
+}
+
+export const enterVariant = {
+  hidden: {
+    opacity: 0
+  },
+  visible: {
+    opacity: 1
   }
 }
 
