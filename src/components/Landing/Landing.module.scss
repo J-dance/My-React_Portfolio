@@ -1,6 +1,30 @@
 // import global styles variables file
 @import "../../assets/styles/variables";
 
+.landingPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+.main{
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  background: $my-black;
+  color: white;
+
+}
 
 // Responsive design
 

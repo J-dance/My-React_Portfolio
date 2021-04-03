@@ -6,14 +6,14 @@ import { componentTransition } from "../../variants";
 
 function About() {
   return (
-    <motion.div className={styles.page}
+    <motion.div className='page'
       variants={componentTransition}
       initial='hidden'
       animate='visible'
       exit='exit'
     >
       <NavBar />
-      <main className={styles.main}>
+      <main className='main'>
         ABOUT
       </main>
     </motion.div>

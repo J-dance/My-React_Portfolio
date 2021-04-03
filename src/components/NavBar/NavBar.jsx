@@ -10,9 +10,9 @@ import {
 const NavBar = () => {
   return (
     <div className={styles.nav}>
-      <h3 className={styles.logo} >LOGO</h3>
+      <Link to="/"><h3 className={styles.logo} >LOGO</h3></Link>
       <ul>
-        <Link to='/' className={styles.link} ><li>HOME</li></Link>
+        <Link to='/home' className={styles.link} ><li>HOME</li></Link>
         <Link to='/about' className={styles.link}><li>ABOUT</li></Link>
         <Link to='/projects' className={styles.link}><li>PROJECTS</li></Link>
         <Link to='/contact' className={styles.link}><li>CONTACT</li></Link>

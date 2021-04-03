@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Landing from "./components/Landing";
 import { AnimatePresence, animatePresence } from "framer-motion";
 
 import {
@@ -31,8 +32,11 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/">
+          <Route path="/Home">
             <Home />
+          </Route>
+          <Route path="/">
+            <Landing />
           </Route>
         </Switch>
       </AnimatePresence>
