@@ -49,13 +49,13 @@ export const nameVariant = {
 export const aVariant = {
   hidden: {
     opacity: 0,
-    x: -50,
-    y: 0
+    x: 0,
+    y: 80
   },
   visible: {
-    opacity: [0, 1, 1, 0],
-    x: [0, 0, 0, 0],
-    y: [0, -50, -50, -50]
+    opacity: [0, 1, 1, 1, 0],
+    x: [0, 0, 0, -25, -25, -100],
+    y: [80, 0, 0, -50, -50, -50]
   }
 }
 

@@ -62,9 +62,9 @@ function Landing() {
               initial='hidden'
               animate='visible'
               transition={{
-                duration: 1.5,
-                delay: 10,
-                times: [0, 0.3, 0.6, 1]
+                duration: 8,
+                delay: 7.5,
+                times: [0, 0.15, 0.2, 0.34, 0.8, 1]
               }}
             >a</motion.h2>
             <motion.h2 className={styles.absolute}
