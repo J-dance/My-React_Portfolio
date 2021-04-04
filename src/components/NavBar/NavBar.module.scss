@@ -41,20 +41,61 @@
 
 // ultra-wide screen (for screens wider than desktop-breakpoint)
 @media screen and (min-width: $desktop-breakpoint) {
+  .nav {
+  
+    ul {
+      
+  
+      li {
+        display: inline;
+        margin: 80px;
+      }
+    }
+  }
   
 }
 
 // desktop
 @media screen and (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint){
+  .nav {
   
+    ul {
+     
+  
+      li {
+        display: inline;
+        margin: 80px;
+      }
+    }
+  }
 }
 
 // Tablet
 @media screen and (min-width: $mob-breakpoint) and (max-width: $tablet-breakpoint){
+  .nav {
   
+    ul {
+    
+  
+      li {
+        display: inline;
+        margin: 50px;
+      }
+    }
+  }
 }
 
 // mobile (below a certain width)
 @media screen and (max-width: $mob-breakpoint) {
+  .nav {
   
+    ul {
+
+  
+      li {
+        display: inline;
+        margin: auto;
+      }
+    }
+  }
 }

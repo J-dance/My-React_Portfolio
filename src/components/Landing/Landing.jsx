@@ -33,7 +33,7 @@ function Landing() {
             transition={{
               duration: 16,
               delay: 2,
-              times: [0, 0.06, 0.2, 0.275, 0.35, 0.425, 0.45, 0.525, 0.6, 0.7, 0.8, 0.9, 1]
+              times: [0, 0.06, 0.2, 0.275, 0.35, 0.425, 0.45, 0.52, 0.6, 0.7, 0.8, 0.9, 1]
             }}
           >
             <motion.h2 className={styles.absolute}
@@ -62,9 +62,10 @@ function Landing() {
               initial='hidden'
               animate='visible'
               transition={{
-                duration: 8,
+                duration: 6,
                 delay: 7.5,
-                times: [0, 0.15, 0.2, 0.34, 0.8, 1]
+                // times: [0, 0.15, 0.2, 0.36, 0.6, 0.8]
+                times: [0, 0.2, 0.3, 0.5, 0.7, 0.8]
               }}
             >a</motion.h2>
             <motion.h2 className={styles.absolute}
@@ -72,9 +73,9 @@ function Landing() {
               initial='hidden'
               animate='visible'
               transition={{
-                duration: 1.5,
-                delay: 11.5,
-                times: [0, 0.3, 0.6, 1]
+                duration: 2,
+                delay: 10.3,
+                times: [0, 0.3, 0.65, 1]
               }}
             >bristol</motion.h2>
 
@@ -84,8 +85,8 @@ function Landing() {
               animate='visible'
               transition={{
                 duration: 1.5,
-                delay: 12.5,
-                times: [0, 0.3, 0.6, 1]
+                delay: 11,
+                times: [0, 0.3, 0.4, 1]
               }}
             >based</motion.h2>
 
@@ -94,9 +95,9 @@ function Landing() {
               initial='hidden'
               animate='visible'
               transition={{
-                duration: 1,
-                delay: 14,
-                times: [0, 0.3, 0.6, 1]
+                duration: 2.5,
+                delay: 12.2,
+                times: [0, 0.4, 0.8, 1]
               }}
             >software</motion.h2>
 

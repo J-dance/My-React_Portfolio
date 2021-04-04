@@ -1,5 +1,12 @@
 import React from "react";
 
+const factor = 0.7;
+
+// desktop
+const introWidth = [100, 100, 100, 150, 150, 70, 70, 120, 120, 130, 130, 150, 150];
+
+const introWidthResponsive = introWidth.map(width => width * factor);
+
 export const introVariant = {
   initial: {
     borderRadius: "50%",
@@ -10,7 +17,7 @@ export const introVariant = {
     y: 0
   },
   animate: {
-    width: [100, 100, 100, 150, 150, 70, 70, 120, 120, 120, 120, 150, 150],
+    width: [100, 100, 100, 150, 150, 70, 70, 120, 120, 130, 130, 150, 150],
     height: [100, 100, 100, 70, 70, 70, 70, 200, 200, 50, 50, 50, 50],
     scale: [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
     x: [0, -200, -200, 150, 150, 150, 150, -200, -200, 0, 0, 30, 0],
@@ -54,7 +61,7 @@ export const aVariant = {
   },
   visible: {
     opacity: [0, 1, 1, 1, 0],
-    x: [0, 0, 0, -25, -25, -100],
+    x: [0, 0, 0, -30, -30, -100],
     y: [80, 0, 0, -50, -50, -50]
   }
 }
@@ -67,7 +74,7 @@ export const bristolVariant = {
   },
   visible: {
     opacity: [0, 1, 1, 0],
-    x: [0, 0, 0, 0],
+    x: [0, 0, 0, -100],
     y: [0, 0, 0, 0]
   }
 }
@@ -80,20 +87,20 @@ export const basedVariant = {
   },
   visible: {
     opacity: [0, 1, 1, 0],
-    x: [0, 0, 0, 0],
-    y: [0, 0, 0, 0]
+    x: [0, 0, 0, -100],
+    y: [50, 50, 50, 40]
   }
 }
 
 export const softwareVariant = {
   hidden: {
     opacity: 0,
-    x: 0,
+    x: 50,
     y: 0
   },
   visible: {
     opacity: [0, 1, 1, 0],
-    x: [0, 0, 0, 0],
+    x: [50, 0, 0, 0],
     y: [0, 0, 0, 0]
   }
 }

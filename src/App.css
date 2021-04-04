@@ -3,11 +3,13 @@
 /* layout */
 .page {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: auto;
   grid-template-rows: 50px 1fr;
 
-  /* height: 100vh;
-  width: 100vw; */
+  height: 100vh;
+  max-height: 100%;
+  width: 100vw;
+  
 }
 
 .main {
@@ -16,12 +18,15 @@
 
   display: flex;
   justify-content: center;
+
+  height: 100%;
+  width: 100%;
 }
 
 /* Responsive design */
 
 /* ultra-wide screen (for screens wider than desktop-breakpoint) */
-@media screen and (min-width: 1024px;) {
+@media screen and (min-width: 1024px) {
   .page {
     grid-template-rows: 60px 1fr;
 
@@ -39,7 +44,7 @@
 /* Tablet */
 @media screen and (min-width: 480px) and (max-width: 768px){
   .page {
-    grid-template-rows: 50px 1fr;
+    grid-template-rows: 60px 1fr;
 
   }
 }
@@ -47,7 +52,7 @@
 /* mobile (below a certain width) */
 @media screen and (max-width: 480px) {
   .page {
-    grid-template-rows: 60px 1fr;
+    grid-template-rows: 60px auto;
 
   }
 }
