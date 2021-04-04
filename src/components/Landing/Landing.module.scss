@@ -55,20 +55,40 @@
 
 // ultra-wide screen (for screens wider than desktop-breakpoint)
 @media screen and (min-width: $desktop-breakpoint) {
-  
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 32px;
+  }
 }
 
 // desktop
 @media screen and (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint){
-  
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 32px;
+  }
 }
 
 // Tablet
 @media screen and (min-width: $mob-breakpoint) and (max-width: $tablet-breakpoint){
-  
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 32px;
+  }
 }
 
 // mobile (below a certain width)
 @media screen and (max-width: $mob-breakpoint) {
-  
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 18px;
+  }
 }

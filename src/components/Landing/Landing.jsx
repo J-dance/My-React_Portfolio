@@ -68,7 +68,7 @@ function Landing() {
                 times: [0, 0.2, 0.3, 0.5, 0.7, 0.8]
               }}
             >a</motion.h2>
-            <motion.h2 className={styles.absolute}
+            <motion.h3 className={styles.absolute}
               variants={bristolVariant}
               initial='hidden'
               animate='visible'
@@ -77,9 +77,9 @@ function Landing() {
                 delay: 10.3,
                 times: [0, 0.3, 0.65, 1]
               }}
-            >bristol</motion.h2>
+            >bristol</motion.h3>
 
-            <motion.h2 className={styles.absolute}
+            <motion.h3 className={styles.absolute}
               variants={basedVariant}
               initial='hidden'
               animate='visible'
@@ -88,7 +88,7 @@ function Landing() {
                 delay: 11,
                 times: [0, 0.3, 0.4, 1]
               }}
-            >based</motion.h2>
+            >based</motion.h3>
 
             <motion.h2 className={styles.absolute}
               variants={softwareVariant}
@@ -107,7 +107,7 @@ function Landing() {
               animate='visible'
               transition={{
                 duration: 1,
-                delay: 15,
+                delay: 15.5,
                 times: [0, 0.3, 0.6, 1]
               }}
             >Developer.</motion.h2>
