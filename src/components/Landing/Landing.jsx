@@ -99,7 +99,7 @@ function Landing() {
                 delay: 12.2,
                 times: [0, 0.4, 0.8, 1]
               }}
-            >software</motion.h2>
+            >Software</motion.h2>
 
             <motion.h2 className={styles.absolute}
               variants={developerVariant}
