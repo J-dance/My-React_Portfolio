@@ -1,18 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 
-
+// for responsive anaimation -> factor scales the animation values and depends on screen width
 let factor = 1;
-const screenWidth = window.screen.width;
-console.log(screenWidth)
+const screenWidth = window.innerWidth;
+
+// on page load
 if (screenWidth < 480) {
   factor = 0.6;
 } else if (screenWidth < 768) {
+  factor = 0.75
+} else if (window.innerWidth < 1024) {
   factor = 0.8
 }
-console.log(factor)
 
+// On page resize (chrom dev tool)
+const handleResize = () => {
+  if (window.innerWidth < 480) {
+    factor = 0.6;
+  } else if (window.innerWidth < 768) {
+    factor = 0.75
+  } else if (window.innerWidth < 1024) {
+    factor = 0.8
+  }
+}
+window.addEventListener('resize', handleResize);
 
-// desktop
+// intro/landing page animation
 const introWidth = [100, 100, 100, 150, 150, 70, 70, 120, 120, 160, 160, 190, 190];
 const introHeight= [100, 100, 100, 70, 70, 70, 70, 200, 200, 50, 50, 50, 50];
 const introX = [0, -200, -200, 150, 150, 150, 150, -180, -180, 0, 0, 30, 0];

@@ -55,7 +55,7 @@ function Landing() {
                 delay: 5.25,
                 times: [0, 0.35, 0.8, 1]
               }}
-            >i'm jojo</motion.h2>
+            >i'm Jojo</motion.h2>
 
             <motion.h2 className={styles.absolute}
               variants={aVariant}
@@ -77,7 +77,7 @@ function Landing() {
                 delay: 10.3,
                 times: [0, 0.3, 0.65, 1]
               }}
-            >bristol</motion.h3>
+            >Bristol</motion.h3>
 
             <motion.h3 className={styles.absolute}
               variants={basedVariant}

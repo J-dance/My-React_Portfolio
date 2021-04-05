@@ -1,9 +1,9 @@
 // import global styles variables file
 @import "../../assets/styles/variables";
 
-.main{
-  align-items: center;
-}
+// .main{
+//   align-items: center;
+// }
 
 .container {
   display: flex;
@@ -13,8 +13,67 @@
   position: relative;
 
   background: $my-black;
-  color: white;
+  color: $background-colour;
 
+}
+
+.homeLanding {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 90%;
+  background: rgba($primary-colour, 0.7);
+  padding: 0px;
+
+  .sun {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 500px;
+    width: 500px;
+
+    background: $secondary-colour;
+    border-radius: 50%;
+
+    h1 {
+      font-size: 64px;
+      color: white;
+      letter-spacing: 0.1em;
+    }
+  }
+
+  .title {
+    position: absolute;
+    bottom: -15px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 72px;
+    letter-spacing: 0.1em;
+    color: $my-black;
+  }
+
+  .cloudLeft {
+    position: absolute;
+    top: 12%;
+    left: 8%;
+  }
+
+  .cloudRight {
+    position: absolute;
+    top: 18%;
+    right: 12%;
+  }
+
+  .cloudBottom {
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+  }
 }
 
 // Responsive design
