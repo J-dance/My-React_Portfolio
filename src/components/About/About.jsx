@@ -6,17 +6,9 @@ import { componentTransition } from "../../variants";
 
 function About() {
   return (
-    <motion.div className='page'
-      variants={componentTransition}
-      initial='hidden'
-      animate='visible'
-      exit='exit'
-    >
-      <NavBar />
-      <main className='main'>
-        ABOUT
-      </main>
-    </motion.div>
+    <div className={styles.main}>
+      ABOUT
+    </div>
   )
 }
 

@@ -2,12 +2,13 @@ import React from 'react';
 import { motion } from "framer-motion";
 import styles from "./Home.module.scss";
 import NavBar from "../NavBar";
+import About from "../About";
 import { introVariant, hoverVariant, componentTransition, hiVariant, nameVariant } from "../../variants";
 import { cloudSvg } from "../../assets/SVG's/svgCollection";
 
 function Home() {
   return (
-    <motion.div className='page'
+    <motion.div className={`page ${styles.page}`}
       variants={componentTransition}
       initial='hidden'
       animate='visible'
@@ -31,7 +32,12 @@ function Home() {
             <div className={styles.cloudBottom}>{cloudSvg()}</div>
           </div>
           
+          {/* render about section */}
           
+          <section className={styles.about}>
+            <About />
+          </section>
+
       </main>
     </motion.div>
   )
