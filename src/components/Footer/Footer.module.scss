@@ -1,0 +1,10 @@
+// import global styles variables file
+@import "../../assets/styles/variables";
+
+footer {
+  height: 100%;
+  width: 100%;
+
+  border-top: 2px solid $my-black;
+  background: $background-colour;
+}

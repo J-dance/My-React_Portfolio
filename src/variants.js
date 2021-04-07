@@ -90,7 +90,7 @@ export const aVariant = {
   },
   visible: {
     opacity: [0, 1, 1, 1, 0],
-    x: [0, 0, 0, -37*factor, -37*factor, -100],
+    x: [0, 0, 0, -39*factor, -39*factor, -100],
     y: [80, 0, 0, -50*factor, -50*factor, -50*factor]
   }
 }

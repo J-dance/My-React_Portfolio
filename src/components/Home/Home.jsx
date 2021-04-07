@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import styles from "./Home.module.scss";
 import NavBar from "../NavBar";
 import About from "../About";
+import Footer from "../Footer";
 import { introVariant, hoverVariant, componentTransition, hiVariant, nameVariant } from "../../variants";
 import { cloudSvg } from "../../assets/SVG's/svgCollection";
 
@@ -39,6 +40,9 @@ function Home() {
           </section>
 
       </main>
+      <section className={styles.footer}>
+        <Footer />
+      </section>
     </motion.div>
   )
 }

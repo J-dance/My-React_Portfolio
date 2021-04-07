@@ -2,7 +2,6 @@
 @import "../../assets/styles/variables";
 
 .page {
-  height: 1500px;
   position: relative;
 }
 
@@ -59,16 +58,23 @@
 }
 
 .about {
-  height: 45%;
+  height: 60%;
   width: 100%;
 
   margin-top: auto;
 }
 
+.footer {
+  height: 100px;
+  width: 100vw;
+}
 // Responsive design
 
 // ultra
 @media screen and (min-width: $desktop-breakpoint) {
+  .page {
+    height: 2500px;
+  }
   .sun {
     height: 400px;
     width: 400px;
@@ -78,7 +84,7 @@
     }
   }
   .title {
-    top: 100%;
+    bottom: -2.5%;
     font-size: 64px;
     letter-spacing: 0.06em;
   }
@@ -107,6 +113,10 @@
 
 // desktop  and (max-width: $desktop-breakpoint)
 @media screen and (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint){
+  .page {
+    height: 2000px;
+  }
+
   .sun {
     height: 400px;
     width: 400px;
@@ -116,7 +126,7 @@
     }
   }
   .title {
-    bottom: 0px;
+    bottom: -2%;
     font-size: 58px;
     letter-spacing: 0.06em;
     text-align: bottom;
@@ -146,6 +156,10 @@
 
 // Tablet and (max-width: $tablet-breakpoint)
 @media screen and (min-width: $mob-breakpoint) and (max-width: $tablet-breakpoint){
+  .page {
+    height: 2000px;
+  }
+
   .sun {
     height: 350px;
     width: 350px;
@@ -184,6 +198,11 @@
 
 // mobile (below a certain width)
 @media screen and (max-width: $mob-breakpoint) {
+
+  .page {
+    height: 1500px;
+  }
+  
   .sun {
     height: 250px;
     width: 250px;
