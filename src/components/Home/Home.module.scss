@@ -32,7 +32,8 @@
     border-radius: 50%;
 
     h1 {
-      color: white;
+      color: $background-colour;
+      font-family: $font-title;
     }
   }
 
@@ -41,6 +42,7 @@
     margin: 0px;
     padding: 0px;
     color: $my-black;
+    font-family: $font-serif;
     text-align: center;
   }
 
@@ -79,13 +81,13 @@
     height: 400px;
     width: 400px;
     h1 {
-      font-size: 48px;
+      font-size: 52px;
       letter-spacing: 0.1em;
     }
   }
   .title {
-    bottom: -2.5%;
-    font-size: 64px;
+    bottom: -4%;
+    font-size: 72px;
     letter-spacing: 0.06em;
   }
 

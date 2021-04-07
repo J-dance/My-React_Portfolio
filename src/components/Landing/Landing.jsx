@@ -75,7 +75,7 @@ function Landing() {
               transition={{
                 duration: 2,
                 delay: 10.3,
-                times: [0, 0.3, 0.65, 1]
+                times: [0, 0.3, 0.7, 1]
               }}
             >Bristol</motion.h3>
 

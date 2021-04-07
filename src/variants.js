@@ -175,3 +175,30 @@ export const componentTransition = {
     transition: {ease: 'easeInOut'}
   }
 }
+
+// for clouds on home page
+export const cloudVariant = {
+  initial: {
+    x: 0,
+    y: 0,
+    scale: 1
+  },
+  animate: {
+    x: [0, 4, -8, 0, 5, 0],
+    y: [0, -4, -7, 3, 7, 0],
+    scale: [1, 1.03, 1.06, 1, 0.97, 1]
+  }
+}
+
+// sun animation and hover
+export const sunVariant = {
+  initial: {
+    scale: 1
+  },
+  animate: {
+    scale: 1.05
+  },
+  hover: {
+    scale: 1.15
+  }
+}

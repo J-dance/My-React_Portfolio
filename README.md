@@ -83,3 +83,7 @@ React router is used to navigate and link between components
 
 Install react animation library.
 This is imported for use. https://www.framer.com/api/motion/
+
+### npm install --save react-router-hash-link
+
+Install hash-link for use of linking to position on page. Import this into the page -> example on home.
