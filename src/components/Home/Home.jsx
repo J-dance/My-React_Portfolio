@@ -5,7 +5,7 @@ import NavBar from "../NavBar";
 import About from "../About";
 import Footer from "../Footer";
 import { componentTransition, cloudVariant, sunVariant } from "../../variants";
-import { cloudSvg } from "../../assets/SVG's/svgCollection";
+import { cloudSvg } from "../../assets/SVGs/svgCollection";
 
 
 function Home() {

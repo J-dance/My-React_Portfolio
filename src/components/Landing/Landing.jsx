@@ -36,7 +36,7 @@ function Landing() {
               times: [0, 0.06, 0.2, 0.275, 0.35, 0.425, 0.45, 0.52, 0.6, 0.7, 0.8, 0.9, 1]
             }}
           >
-            <motion.h2 className={styles.absolute}
+            <motion.h1 className={styles.absolute}
               variants={hiVariant}
               initial='hidden'
               animate='visible'
@@ -45,7 +45,7 @@ function Landing() {
                 delay: 2.2,
                 times: [0, 0.2, 0.7, 0.8]
               }}
-            >Hi</motion.h2>
+            >Hi</motion.h1>
             <motion.h2 className={styles.absolute}
               variants={nameVariant}
               initial='hidden'
@@ -68,7 +68,7 @@ function Landing() {
                 times: [0, 0.2, 0.3, 0.5, 0.7, 0.8]
               }}
             >a</motion.h2>
-            <motion.h3 className={styles.absolute}
+            <motion.h2 className={styles.absolute}
               variants={bristolVariant}
               initial='hidden'
               animate='visible'
@@ -77,9 +77,9 @@ function Landing() {
                 delay: 10.3,
                 times: [0, 0.3, 0.7, 1]
               }}
-            >Bristol</motion.h3>
+            >Bristol</motion.h2>
 
-            <motion.h3 className={styles.absolute}
+            <motion.h2 className={styles.absolute}
               variants={basedVariant}
               initial='hidden'
               animate='visible'
@@ -88,7 +88,7 @@ function Landing() {
                 delay: 11,
                 times: [0, 0.3, 0.4, 1]
               }}
-            >based</motion.h3>
+            >based</motion.h2>
 
             <motion.h2 className={styles.absolute}
               variants={softwareVariant}

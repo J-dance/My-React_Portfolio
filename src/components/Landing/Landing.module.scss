@@ -10,6 +10,8 @@
   width: 100vw;
 
   background: $background-colour;
+
+  font-family: $font-standard;
 }
 
 .main{
@@ -40,15 +42,15 @@
 .enterButton, .enterButton:focus {
   background: transparent;
   text-decoration: underline;
-  width: 150px;
-  height: 50px;
-  border: 1px solid transparent;
+  border: transparent;
   border-radius: 30px;
   color: $my-black;
+  font-family: $font-standard;
+  letter-spacing: 0.2em;
 }
 
 .enterButton:hover{
-  color: orange;
+  color: $secondary-colour;
 }
 
 // Responsive design
@@ -58,8 +60,11 @@
   h2 {
     font-size: 32px;
   }
-  h3 {
-    font-size: 32px;
+  h1 {
+    font-size: 36px;
+  }
+  .enterButton {
+    font-size: 22px;
   }
 }
 
@@ -68,8 +73,11 @@
   h2 {
     font-size: 32px;
   }
-  h3 {
-    font-size: 32px;
+  h1 {
+    font-size: 36px;
+  }
+  .enterButton {
+    font-size: 22px;
   }
 }
 
@@ -78,8 +86,11 @@
   h2 {
     font-size: 24px;
   }
-  h3 {
+  h1 {
     font-size: 24px;
+  }
+  .enterButton {
+    font-size: 14px;
   }
 }
 
@@ -88,7 +99,10 @@
   h2 {
     font-size: 18px;
   }
-  h3 {
-    font-size: 18px;
+  h1 {
+    font-size: 24px;
+  }
+  .enterButton {
+    font-size: 12px;
   }
 }
