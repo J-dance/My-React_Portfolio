@@ -41,7 +41,6 @@
 
 .enterButton, .enterButton:focus {
   background: transparent;
-  text-decoration: underline;
   border: transparent;
   border-radius: 30px;
   color: $my-black;
@@ -51,6 +50,7 @@
 
 .enterButton:hover{
   color: $secondary-colour;
+  text-decoration: underline;
 }
 
 // Responsive design

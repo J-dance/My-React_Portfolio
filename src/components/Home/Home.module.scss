@@ -17,7 +17,7 @@
   align-items: center;
 
   width: 100%;
-  height: 80vh;
+  height: 85vh;
   
   background: rgba($primary-colour, 0.7);
   padding: 0px;
@@ -60,10 +60,10 @@
 }
 
 .about {
-  height: 60%;
+  // height: 70%;
   width: 100%;
 
-  margin-top: auto;
+  // margin-top: auto;
 }
 
 .footer {
@@ -75,7 +75,7 @@
 // ultra
 @media screen and (min-width: $desktop-breakpoint) {
   .page {
-    height: 2500px;
+    height: 3000px;
   }
   .sun {
     height: 400px;
@@ -89,6 +89,11 @@
     bottom: -4%;
     font-size: 72px;
     letter-spacing: 0.06em;
+  }
+
+  .about {
+    height: 70%;
+    margin-top: auto;
   }
 
   .cloudLeft {
@@ -116,7 +121,7 @@
 // desktop  and (max-width: $desktop-breakpoint)
 @media screen and (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint){
   .page {
-    height: 2000px;
+    height: 3000px;
   }
 
   .sun {
@@ -132,6 +137,11 @@
     font-size: 58px;
     letter-spacing: 0.06em;
     text-align: bottom;
+  }
+
+  .about {
+    height: 70%;
+    margin-top: auto;
   }
 
   .cloudLeft {
@@ -159,7 +169,7 @@
 // Tablet and (max-width: $tablet-breakpoint)
 @media screen and (min-width: $mob-breakpoint) and (max-width: $tablet-breakpoint){
   .page {
-    height: 2000px;
+    height: auto;
   }
 
   .sun {
@@ -171,9 +181,13 @@
     }
   }
   .title {
-    bottom: -10px;
+    bottom: -2%;
     font-size: 58px;
     letter-spacing: 0.1em;
+  }
+  .about {
+    height: 3000px;
+    margin-top: 200px;
   }
 
   .cloudLeft {
@@ -202,7 +216,7 @@
 @media screen and (max-width: $mob-breakpoint) {
 
   .page {
-    height: 1500px;
+    // height: 2000px;
   }
   
   .sun {
@@ -214,9 +228,15 @@
     }
   }
   .title {
-    bottom: -8px;
+    bottom: -2%;
     font-size: 42px;
     letter-spacing: 0.1em;
+    width: auto;
+  }
+
+  .about {
+    height: 3300px;
+    margin-top: 150px;
   }
 
   .cloudLeft {

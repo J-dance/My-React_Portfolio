@@ -5,6 +5,12 @@ import { motion } from "framer-motion";
 import { componentTransition } from "../../variants";
 import profilePic from "../../assets/images/profile.JPG";
 import web_design from '../../assets/SVGs/web_design.svg';
+import htmlSVG from "../../assets/SVGs/html5.svg";
+import cssSVG from "../../assets/SVGs/css3.svg";
+import jsSVG from "../../assets/SVGs/js.svg";
+import reactSVG from "../../assets/SVGs/react.svg";
+import nodeSVG from "../../assets/SVGs/node.svg";
+import tsSVG from "../../assets/SVGs/ts.svg";
 
 function About() {
   return (
@@ -16,7 +22,7 @@ function About() {
         </div>
         <img class={styles.profileImage} src={profilePic} alt="profile picture"></img>
       </section>
-      <section className={styles.aboutText}>
+      <section className={`${styles.aboutText} ${styles.aboutTextRight}`}>
         <img className={styles.svg} src={web_design}></img>
         <div className={`${styles.blankBoxRight} ${styles.blankBox}`}>
           <p>I really enjoy web-design and creating eye-catching and visually pleasing apps. I am naturally drawn to the backend of things, having developed an engineers mindset from my time at university,  always looking to problem solve!</p>
@@ -27,7 +33,30 @@ function About() {
         <div className={styles.techIconContainer}>
           {/* insert tech stack icons */}
           {/* html5, css3, js es6, React, node.js, Ts, Angular, firebase,  */}
-
+          <div className={styles.iconTile}>
+            <img src={htmlSVG}></img>
+            <p>HTML5</p>
+          </div>
+          <div className={styles.iconTile}>
+            <img src={cssSVG}></img>
+            <p>CSS3</p>
+          </div>
+          <div className={styles.iconTile}>
+            <img src={jsSVG}></img>
+            <p>JS ES6</p>
+          </div>
+          <div className={styles.iconTile}>
+            <img src={reactSVG}></img>
+            <p>React</p>
+          </div>
+          <div className={styles.iconTile}>
+            <img src={nodeSVG}></img>
+            <p>node.js</p>
+          </div>
+          <div className={styles.iconTile}>
+            <img src={tsSVG}></img>
+            <p>TypeScript</p>
+          </div>
         </div>
       </section>
     </div>
