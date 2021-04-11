@@ -202,3 +202,12 @@ export const sunVariant = {
     scale: 1.15
   }
 }
+
+export const projectCardVariant = {
+  hover: {
+    opacity: 1,
+    // transition: {
+    //   duration: 1
+    // }
+  }
+}

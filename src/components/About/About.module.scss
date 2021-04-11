@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: auto;
+  height: 100%;
   padding: 0px;
   background: $my-grey;
 
@@ -356,7 +356,7 @@
         height: 100px;
   
         .iconTile {
-          margin: 60px;
+          margin: 35px;
           img {
             width: 100px;
             height: 100px;

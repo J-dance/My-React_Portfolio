@@ -2,6 +2,83 @@
 @import "../../assets/styles/variables";
 
 
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $background-colour;
+
+  .title {
+    font-family: $font-title;
+    font-size: 72px;
+    letter-spacing: 0.3em;
+    color: $primary-colour;
+  }
+  
+  .projectContainer {
+    width: 80%;
+    height: auto;
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    .projectTile {
+      display: flex; 
+      flex-direction: column;
+      align-items: center;
+
+      margin: 30px;
+      padding: 15px;
+    
+      width: 200px;
+      height: 300px;
+    
+      border: 2px solid $my-black;
+      border-radius: 30px;
+
+      color: $my-black;
+      font-family: $font-standard;
+
+      .tileMotion {
+        opacity: 0;
+        height: 100%;
+        width: 100%;
+      }
+
+      h3 {
+        text-align: center;
+        font-size: 24px;
+        letter-spacing: 0.1em;
+      }
+    }
+  
+    .calc {
+      background: rgb(151, 128, 85);
+    }
+  
+    .game {
+      background: wheat;
+    }
+  
+    .morse {
+      background: wheat;
+    }
+  
+    .punk {
+      background: wheat;
+    }
+  
+    .knowaste {
+      background: wheat;
+    }
+  }
+}
+
+
+
+
+
 // Responsive design
 
 // ultra-wide screen (for screens wider than desktop-breakpoint)
