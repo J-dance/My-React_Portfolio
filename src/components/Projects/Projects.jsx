@@ -3,6 +3,10 @@ import NavBar from "../NavBar";
 import styles from "./Projects.module.scss";
 import { motion } from "framer-motion";
 import { componentTransition, projectCardVariant } from "../../variants";
+import {
+  Link
+} from "react-router-dom";
+
 
 const Projects = () => {
   return (
@@ -24,69 +28,77 @@ const Projects = () => {
           transition: {staggerChildren: 1}
         }}
         >
-          <motion.div className={`${styles.projectTile} ${styles.calc}`}
-          variants={componentTransition}
-          initial='hidden'
-          animate='visible'
-          >
-            {/* this shows the text on hover and clicking takes you to the website */}
-            <motion.div className={styles.tileMotion}
-            variants={projectCardVariant}
-            whileHover='hover'
-            whileTap='hover'
+          <a href="https://j-dance.github.io/My-Calculator/" target="_blank">
+            <motion.div className={`${styles.projectTile} ${styles.calc}`}
+            variants={componentTransition}
+            initial='hidden'
+            animate='visible'
             >
-              <h3>MY CALCULATOR</h3>
-              <p>This was one of my first JavaScript applications. It is a calculator with basic functionality. Bootstrap was used for styling, tests were used...</p>
+              {/* this shows the text on hover and clicking takes you to the website */}
+              <motion.div className={styles.tileMotion}
+              variants={projectCardVariant}
+              whileHover='hover'
+              whileTap='hover'
+              >
+                <h3>MY CALCULATOR</h3>
+                <p>This was one of my first JavaScript applications. It is a calculator with basic functionality. Bootstrap was used for styling, tests were used...</p>
+              </motion.div>
             </motion.div>
-          </motion.div>
+          </a>
 
-          <motion.div className={`${styles.projectTile} ${styles.game}`}
-          variants={componentTransition}
-          initial='hidden'
-          animate='visible'
-          >
-            {/* Game*/}
-            <motion.div className={styles.tileMotion}
-            variants={projectCardVariant}
-            whileHover='hover'
-            whileTap='hover'
+          <a href='https://j-dance.github.io/My-Javescript-Game/' target="_blank">
+            <motion.div className={`${styles.projectTile} ${styles.game}`}
+            variants={componentTransition}
+            initial='hidden'
+            animate='visible'
             >
-              <h3>MY JS-GAME</h3>
-              <p>A grid based game built in javascript...</p>
+              {/* Game*/}
+              <motion.div className={styles.tileMotion}
+              variants={projectCardVariant}
+              whileHover='hover'
+              whileTap='hover'
+              >
+                <h3>MY JS-GAME</h3>
+                <p>A grid based game built in javascript...</p>
+              </motion.div>
             </motion.div>
-          </motion.div>
+          </a>
 
-          <motion.div className={`${styles.projectTile} ${styles.morse}`}
-          variants={componentTransition}
-          initial='hidden'
-          animate='visible'
-          >
-            {/* morse code translator*/}
-            <motion.div className={styles.tileMotion}
-            variants={projectCardVariant}
-            whileHover='hover'
-            whileTap='hover'
+          <a href="https://j-dance.github.io/Morse-Code-Translator/" target="_blank">
+            <motion.div className={`${styles.projectTile} ${styles.morse}`}
+            variants={componentTransition}
+            initial='hidden'
+            animate='visible'
             >
-              <h3>MORSE CODE TRANSLATOR</h3>
-              <p>Morse code translator, wither english to morse or vice versa...</p>
+              {/* morse code translator*/}
+              <motion.div className={styles.tileMotion}
+              variants={projectCardVariant}
+              whileHover='hover'
+              whileTap='hover'
+              >
+                <h3>MORSE CODE TRANSLATOR</h3>
+                <p>Morse code translator, wither english to morse or vice versa...</p>
+              </motion.div>
             </motion.div>
-          </motion.div>
+          </a>
 
-          <motion.div className={`${styles.projectTile} ${styles.punk}`}
-          variants={componentTransition}
-          initial='hidden'
-          animate='visible'
-          >
-            {/* punk ipa*/}
-            <motion.div className={styles.tileMotion}
-            variants={projectCardVariant}
-            whileHover='hover'
-            whileTap='hover'
+          <a href="https://j-dance.github.io/Punk-IPA-API/" target="_blank" >
+            <motion.div className={`${styles.projectTile} ${styles.punk}`}
+            variants={componentTransition}
+            initial='hidden'
+            animate='visible'
             >
-              <h3>PUNK IPA API</h3>
-              <p>BUilt a front end for a punk ipa api with search and filter features...</p>
+              {/* punk ipa*/}
+              <motion.div className={styles.tileMotion}
+              variants={projectCardVariant}
+              whileHover='hover'
+              whileTap='hover'
+              >
+                <h3>PUNK IPA API</h3>
+                <p>BUilt a front end for a punk ipa api with search and filter features...</p>
+              </motion.div>
             </motion.div>
-          </motion.div>
+          </a>
 
           <motion.div className={`${styles.projectTile} ${styles.knowaste}`}
           variants={componentTransition}
