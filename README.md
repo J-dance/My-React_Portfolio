@@ -87,3 +87,7 @@ This is imported for use. https://www.framer.com/api/motion/
 ### npm install --save react-router-hash-link
 
 Install hash-link for use of linking to position on page. Import this into the page -> example on home.
+
+### Email.js npm install emailjs-com --save
+
+Email.js used to create basic contact form. User_is and other sensitive information is included in a emailjs.js file in the .gitignore.

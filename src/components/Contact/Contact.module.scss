@@ -1,25 +1,259 @@
 // import global styles variables file
 @import "../../assets/styles/variables";
 
+.main {
+  display: grid;
+  // grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+
+  background: $background-colour;
+  height: 90vh;
+
+  .titleContainer {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+
+    background: $my-black;
+  
+    .title {
+    
+      font-family: $font-serif;
+      // font-size: 96px;
+      // letter-spacing: 0.1em;
+      color: $background-colour;
+    }
+  }
+
+  .contactForm {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    display: flex;
+    flex-direction: column;
+    // width: 70%;
+    margin: auto;
+
+    font-family: $font-standard;
+    color: $my-black;
+    // font-size: 18px;
+
+    input {
+      // margin-top: 10px;
+      // margin-bottom: 20px;
+      // padding: 5px;
+      // border-radius: 20px;
+      border: 2px solid $my-black;
+      font-family: $font-standard;
+      color: $my-black;
+    }
+
+    textarea {
+      // margin-top: 10px;
+      // height: 100px;
+      // padding: 5px;
+      border: 2px solid $my-black;
+      font-family: $font-standard;
+      color: $my-black;
+      // border-radius: 20px;
+    }
+
+    .submit {
+      // width: 100px;
+      margin-left: auto;
+      margin-right: auto;
+      // margin-top: 30px;
+      background: transparent;
+      border: transparent;
+      font-family: $font-standard;
+      color: $my-pink;
+      // letter-spacing: 0.3em;
+      // font-size: 16px;
+      // font-weight: 600;
+    }
+  }
+}
 
 // Responsive design
 
 // ultra-wide screen (for screens wider than desktop-breakpoint)
 @media screen and (min-width: $desktop-breakpoint) {
+  .main {
+    grid-template-columns: 1fr 1fr;
   
+    .titleContainer {
+      overflow: hidden;
+      .title {
+        font-size: 96px;
+        letter-spacing: 0.2em;
+      }
+    }
+  
+    .contactForm {
+      width: 70%;
+      font-size: 18px;
+  
+      input {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 5px;
+        border-radius: 20px;
+      }
+  
+      textarea {
+        margin-top: 10px;
+        height: 100px;
+        padding: 5px;
+        border-radius: 20px;
+      }
+  
+      .submit {
+        width: 100px;
+        margin-top: 30px;
+        letter-spacing: 0.3em;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+  }
 }
 
 // desktop
 @media screen and (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint){
+  .main {
+    grid-template-columns: 1fr 1fr;
   
+    .titleContainer {
+      overflow: hidden;
+
+      .title {
+        font-size: 64px;
+        letter-spacing: 0.1em;
+      }
+    }
+  
+    .contactForm {
+      width: 70%;
+      font-size: 22px;
+  
+      input {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 5px;
+        border-radius: 20px;
+      }
+  
+      textarea {
+        margin-top: 10px;
+        height: 100px;
+        padding: 5px;
+        border-radius: 20px;
+      }
+  
+      .submit {
+        width: 100px;
+        margin-top: 30px;
+        letter-spacing: 0.3em;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+  }
 }
 
 // Tablet
 @media screen and (min-width: $mob-breakpoint) and (max-width: $tablet-breakpoint){
+  .main {
+    grid-template-columns: 1fr 2fr;
   
+    .titleContainer {
+      overflow: hidden;
+    
+      .title {
+        font-size: 86px;
+        letter-spacing: 0.3em;
+        transform: rotate(270deg);
+        margin: 0px;
+      }
+    }
+  
+    .contactForm {
+      width: 75%;
+      font-size: 22px;
+  
+      input {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 8px;
+        border-radius: 20px;
+      }
+  
+      textarea {
+        margin-top: 10px;
+        height: 100px;
+        padding: 5px;
+        border-radius: 20px;
+      }
+  
+      .submit {
+        width: 100px;
+        margin-top: 30px;
+        letter-spacing: 0.3em;
+        font-size: 24px;
+        font-weight: 600;
+      }
+    }
+  }
 }
 
 // mobile (below a certain width)
 @media screen and (max-width: $mob-breakpoint) {
+  .main {
+    grid-template-columns: 1fr 2fr;
   
+    .titleContainer {
+      overflow: hidden;
+    
+      .title {
+        font-size: 48px;
+        letter-spacing: 0.2em;
+        transform: rotate(270deg);
+        margin: 0px;
+      }
+    }
+  
+    .contactForm {
+      width: 80%;
+      font-size: 16px;
+  
+      input {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 5px;
+        border-radius: 20px;
+      }
+  
+      textarea {
+        margin-top: 10px;
+        height: 100px;
+        padding: 5px;
+        border-radius: 20px;
+      }
+  
+      .submit {
+        width: 100px;
+        margin-top: 30px;
+        letter-spacing: 0.3em;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+  }
 }
