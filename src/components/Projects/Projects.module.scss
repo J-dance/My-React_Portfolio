@@ -1,20 +1,84 @@
 // import global styles variables file
 @import "../../assets/styles/variables";
 
+.page {
+  height: 1600px;
+}
 
 .main{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
+  display: grid ;
+  grid-template-columns: 1fr 1fr;
   background: $background-colour;
 
   .title {
+    position: absolute;
+
+    top: 10%;
+    left: 0%;
+    transform: rotate(320deg);
     font-family: $font-title;
-    // font-size: 72px;
-    // letter-spacing: 0.3em;
-    color: $primary-colour;
+    color: $my-black;
   }
   
+  .leftBackground {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba($primary-colour, 0.7);
+
+    .cloudOne {
+      position: absolute;
+      top: 3%;
+      left: 5%;
+      width: 200px;
+      height: 200px;
+    }
+
+    .cloudTwo {
+      position: absolute;
+      top: 14%;
+      right: 5%;
+      width: 240px;
+      height: 240px;
+    }
+
+    .cloudThree {
+      position: absolute;
+      top: 35%;
+      left: 5%;
+      width: 180px;
+      height: 180px;
+    }
+  }
+
+  .rightBackground {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(100% 50% at 100% 50%, rgba($secondary-colour, 0.82) 30%, rgba($secondary-colour, 0) 100%);
+
+    overflow-x: hidden;
+
+    .sun {
+      margin-right: -300px;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: rgba($secondary-colour, 0.9);
+    }
+  }
+
   .projectContainer {
     width: 80%;
     height: auto;
@@ -86,8 +150,8 @@
   .main {
     
     .title {
-      font-size: 72px;
-      letter-spacing: 0.3em;
+      font-size: 96px;
+      letter-spacing: 0.2em;
     }
     
     .projectContainer {
@@ -120,7 +184,7 @@
     
     .title {
       font-size: 72px;
-      letter-spacing: 0.3em;
+      letter-spacing: 0.2em;
     }
     
     .projectContainer {
@@ -151,9 +215,15 @@
 @media screen and (min-width: $mob-breakpoint) and (max-width: $tablet-breakpoint){
   .main{
     
+
     .title {
       font-size: 72px;
       letter-spacing: 0.3em;
+    }
+
+    .a {
+      all: revert;
+      
     }
     
     .projectContainer {
@@ -161,6 +231,7 @@
       flex-wrap: wrap;
       justify-content: center;
       
+
       .projectTile {
   
         margin: 30px;
