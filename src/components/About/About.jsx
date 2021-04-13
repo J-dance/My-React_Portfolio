@@ -25,7 +25,7 @@ function About() {
       <section className={`${styles.aboutText} ${styles.aboutTextRight}`}>
         <img className={styles.svg} src={web_design}></img>
         <div className={`${styles.blankBoxRight} ${styles.blankBox}`}>
-          <p>I really enjoy web-design and creating eye-catching and visually pleasing apps. I am naturally drawn to the backend of things, having developed an engineers mindset from my time at university,  always looking to problem solve!</p>
+          <p>I really enjoy web-design and creating eye-catching and visually pleasing apps. I am also naturally drawn to the backend of things, having developed an engineers mindset from my time at university and I'm always on the look out to problem solve!</p>
         </div>
       </section>
       <section className={styles.techContainer}>

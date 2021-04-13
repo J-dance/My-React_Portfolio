@@ -4,7 +4,9 @@ import Projects from "./components/Projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Landing from "./components/Landing";
-import { AnimatePresence, animatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
+// import { ParallaxProvider } from 'react-scroll-parallax';
+import AOS from 'aos'
 
 import {
   BrowserRouter as Router,
@@ -15,10 +17,14 @@ import {
 } from "react-router-dom";
 
 function App() {
+
   // whenever the route changes it updates this constant
   const location = useLocation()
+
+  // initialize aos animation library
+  AOS.init()
+
   return (
-    
     
       <AnimatePresence exitBeforeEnter>
         {/* provide the switch with location props. This lets us use exit in our compenents*/}
@@ -40,7 +46,6 @@ function App() {
           </Route>
         </Switch>
       </AnimatePresence>
-    
    
   );
 }

@@ -55,7 +55,7 @@ function Landing() {
                 delay: 5.25,
                 times: [0, 0.35, 0.8, 1]
               }}
-            >i'm Jojo</motion.h2>
+            >I'm Jojo</motion.h2>
 
             <motion.h2 className={styles.absolute}
               variants={aVariant}

@@ -91,3 +91,19 @@ Install hash-link for use of linking to position on page. Import this into the p
 ### Email.js npm install emailjs-com --save
 
 Email.js used to create basic contact form. User_is and other sensitive information is included in a emailjs.js file in the .gitignore.
+
+### npm i react-scroll-parallax
+
+Used for creating parallax scroll effects in project page and home page landing.
+https://www.npmjs.com/package/react-scroll-parallax
+
+###   npm install aos --save
+
+Used for animating elements on scroll.
+https://www.npmjs.com/package/aos
+
+### npm i --save @fortawesome/fontawesome-svg-core
+### npm install --save @fortawesome/free-solid-svg-icons
+### npm install --save @fortawesome/react-fontawesome
+
+For use of font awesome.

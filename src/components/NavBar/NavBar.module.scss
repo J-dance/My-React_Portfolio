@@ -22,6 +22,11 @@
 
   .logo {
     position: absolute;
+    left: 10px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   .link {
@@ -37,6 +42,22 @@
     li {
       display: inline;
       // margin: 80px;
+    }
+  }
+
+  .menu {
+    position: absolute;
+    right: 20px;
+    .icon {
+      font-size: 32px;
+      text-align: center;
+      color: $my-black;
+
+      &:hover {
+        color: $secondary-colour;
+        font-size: 38px;
+        cursor: pointer;
+      }
     }
   }
 }

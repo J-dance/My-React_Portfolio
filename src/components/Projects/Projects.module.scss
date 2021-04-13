@@ -80,7 +80,10 @@
   }
 
   .projectContainer {
-    width: 80%;
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    width: 100%;
     height: auto;
   
     // display: flex;
@@ -118,7 +121,9 @@
     }
   
     .calc {
-      background: $my-grey;
+      // background: $my-grey;
+      background-image: url('../../assets/images/calc_scrnshot.png');
+      object-fit: cover;
     }
   
     .game {
@@ -155,17 +160,16 @@
     }
     
     .projectContainer {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       .projectTile {
   
-        margin: 30px;
+        margin: auto;
+        margin-top: 30px;
         padding: 15px;
       
-        width: 200px;
-        height: 300px;
+        width: 300px;
+        height: 200px;
 
         border-radius: 30px;
   

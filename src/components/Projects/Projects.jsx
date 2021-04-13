@@ -7,6 +7,7 @@ import { cloudSvg } from "../../assets/SVGs/svgCollection";
 import {
   Link
 } from "react-router-dom";
+// import { Parallax } from 'react-scroll-parallax';
 
 
 const Projects = () => {
@@ -66,21 +67,17 @@ const Projects = () => {
         <h1 className={styles.title}>PROJECTS</h1>
 
         {/* projects go in here */}
-        {/* <motion.section className={styles.projectContainer}
+        <motion.section className={styles.projectContainer}
         initial={{opacity: 1}}
         animate={{
           opacity: 1,
           transition: {staggerChildren: 1}
-        }} */}
-        {/* >
+        }}
+        >
           <a className={styles.a} href="https://j-dance.github.io/My-Calculator/" target="_blank">
-            <motion.div className={`${styles.projectTile} ${styles.calc}`}
-            variants={componentTransition}
-            initial='hidden'
-            animate='visible'
-            > */}
+            <div data-aos="fade-in" className={`${styles.projectTile} ${styles.calc}`}>
               {/* this shows the text on hover and clicking takes you to the website */}
-              {/* <motion.div className={styles.tileMotion}
+              <motion.div className={styles.tileMotion}
               variants={projectCardVariant}
               whileHover='hover'
               whileTap='hover'
@@ -88,22 +85,22 @@ const Projects = () => {
                 <h3>MY CALCULATOR</h3>
                 <p>This was one of my first JavaScript applications. It is a calculator with basic functionality. Bootstrap was used for styling, tests were used...</p>
               </motion.div>
-            </motion.div>
-          </a> */}
+            </div>
+          </a>
 
-          {/* <a href='https://j-dance.github.io/My-Javescript-Game/' target="_blank">
+          <a href='https://j-dance.github.io/My-Javescript-Game/' target="_blank">
             <motion.div className={`${styles.projectTile} ${styles.game}`}
             variants={componentTransition}
             initial='hidden'
             animate='visible'
             >
               {/* Game*/}
-              {/* <motion.div className={styles.tileMotion}
+              <motion.div className={styles.tileMotion}
               variants={projectCardVariant}
               whileHover='hover'
               whileTap='hover'
-              >  */}
-                {/* <h3>MY JS-GAME</h3>
+              > 
+                <h3>MY JS-GAME</h3>
                 <p>A grid based game built in javascript...</p>
               </motion.div>
             </motion.div>
@@ -114,9 +111,9 @@ const Projects = () => {
             variants={componentTransition}
             initial='hidden'
             animate='visible'
-            > */}
+            >
               {/* morse code translator*/}
-              {/* <motion.div className={styles.tileMotion}
+              <motion.div className={styles.tileMotion}
               variants={projectCardVariant}
               whileHover='hover'
               whileTap='hover'
@@ -125,16 +122,16 @@ const Projects = () => {
                 <p>Morse code translator, wither english to morse or vice versa...</p>
               </motion.div>
             </motion.div>
-          </a> */}
+          </a>
 
-          {/* <a href="https://j-dance.github.io/Punk-IPA-API/" target="_blank" >
+          <a href="https://j-dance.github.io/Punk-IPA-API/" target="_blank" >
             <motion.div className={`${styles.projectTile} ${styles.punk}`}
             variants={componentTransition}
             initial='hidden'
             animate='visible'
-            > */}
+            >
               {/* punk ipa*/}
-              {/* <motion.div className={styles.tileMotion}
+              <motion.div className={styles.tileMotion}
               variants={projectCardVariant}
               whileHover='hover'
               whileTap='hover'
@@ -143,24 +140,24 @@ const Projects = () => {
                 <p>BUilt a front end for a punk ipa api with search and filter features...</p>
               </motion.div>
             </motion.div>
-          </a> */}
+          </a>
 
-          {/* <motion.div className={`${styles.projectTile} ${styles.knowaste}`}
+          <motion.div className={`${styles.projectTile} ${styles.knowaste}`}
           variants={componentTransition}
           initial='hidden'
           animate='visible'
           >
             {/* this shows the text on hover and clicking takes you to the website */}
-            {/* <motion.div className={styles.tileMotion}
+            <motion.div className={styles.tileMotion}
             variants={projectCardVariant}
             whileHover='hover'
             whileTap='hover'
-            > */} 
-              {/* <h3>KNO WASTE - CLIENT PROJECT</h3>
+            > 
+              <h3>KNO WASTE - CLIENT PROJECT</h3>
               <p>Client project for Kno-waste - Bristol Uni start up, group project for 5 weeks, used React...</p>
             </motion.div>
           </motion.div>
-        </motion.section> */}
+        </motion.section>
         
       </main>
     </motion.div>

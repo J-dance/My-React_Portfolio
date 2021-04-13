@@ -18,7 +18,8 @@ function Home() {
     >
       <NavBar />
       
-      <main className={`main ${styles.main}`}>          
+      <main className={`main ${styles.main}`}>  
+        <div className={styles.parralaxWrapper}>     
           <div className={styles.homeLanding}>
             <motion.div className={styles.sun}
             variants={sunVariant}
@@ -71,12 +72,13 @@ function Home() {
               ease: 'linear'
             }}>{cloudSvg()}</motion.div>
           </div>
-          
-          {/* render about section */}
-          
-          <section className={styles.about} id="aboutSecion">
-            <About />
-          </section>
+        </div> 
+        
+        {/* render about section */}
+        
+        <section className={styles.about} id="aboutSecion">
+          <About />
+        </section>
 
       </main>
       <section className={styles.footer}>

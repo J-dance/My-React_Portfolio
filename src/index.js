@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
+
   <React.StrictMode>
     {/* move router from app.js to index for use of useLocation */}
     <Router>
