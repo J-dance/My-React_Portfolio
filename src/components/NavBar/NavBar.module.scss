@@ -41,7 +41,10 @@
 
     li {
       display: inline;
-      // margin: 80px;
+      
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 

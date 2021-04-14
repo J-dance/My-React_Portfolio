@@ -18,14 +18,14 @@ function About() {
       <h1 className={styles.title}>ABOUT</h1>
       <section className={styles.aboutText}>
         <div className={`${styles.blankBoxLeft} ${styles.blankBox}`}>
-          <p>I am a Brighton born and Bristol based developer with a passion for problem solving, creative thinking and design. I moved to Bristol to study Mechanical engineering back in 2016. It wasn't until a global pandemic happened that I really fell in love with programming. I completed _nology's 12-week intensive web-development course and from day 1 I was hooked. </p>
+          <p>I am a Bristol based developer with a passion for problem solving, creative thinking and design. I moved to Bristol to study Mechanical engineering back in 2016. It wasn't until a global pandemic happened that I really fell in love with programming. I completed _nology's 12-week intensive web-development course and from day 1 I was hooked. </p>
         </div>
         <img class={styles.profileImage} src={profilePic} alt="profile picture"></img>
       </section>
       <section className={`${styles.aboutText} ${styles.aboutTextRight}`}>
         <img className={styles.svg} src={web_design}></img>
         <div className={`${styles.blankBoxRight} ${styles.blankBox}`}>
-          <p>I really enjoy web-design and creating eye-catching and visually pleasing apps. I am also naturally drawn to the backend of things, having developed an engineers mindset from my time at university and I'm always on the look out to problem solve!</p>
+          <p>I really enjoy web-design and creating eye-catching and visually pleasing apps. I am also naturally drawn to the backend of things, having developed an engineers mindset from my time at university.</p>
         </div>
       </section>
       <section className={styles.techContainer}>

@@ -75,7 +75,7 @@ const Projects = () => {
         }}
         >
           <a className={styles.a} href="https://j-dance.github.io/My-Calculator/" target="_blank">
-            <div data-aos="fade-in" className={`${styles.projectTile} ${styles.calc}`}>
+            <div className={`${styles.projectTile} ${styles.calc}`}>
               {/* this shows the text on hover and clicking takes you to the website */}
               <motion.div className={styles.tileMotion}
               variants={projectCardVariant}

@@ -157,7 +157,7 @@ export const enterVariant = {
 }
 
 export const hoverVariant ={
-  whileHover: {color: '#a83283', originX: 0, originY: 0, scale: 1.5},
+  whileHover: {color: '#FF8552', scale: 1.1},
   transition: {type: 'spring', stiffness: 500}
 }
 
@@ -168,7 +168,7 @@ export const componentTransition = {
   },
   visible: {
     opacity: 1,
-    transition: { duration: 0.5}
+    transition: { duration: 0.3}
   },
   exit: {
     opacity: 0,
@@ -206,9 +206,6 @@ export const sunVariant = {
 export const projectCardVariant = {
   hover: {
     opacity: 1,
-    // transition: {
-    //   duration: 1
-    // }
   }
 }
 

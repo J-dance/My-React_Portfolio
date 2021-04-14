@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Contact.module.scss';
 import NavBar from "../NavBar";
 import { motion } from "framer-motion";
-import { componentTransition } from "../../variants";
+import { componentTransition, hoverVariant } from "../../variants";
 import emailjs from 'emailjs-com';
 import { service_id, template_id, user_id} from "../../emailjs";
 function Contact() {
@@ -38,7 +38,10 @@ function Contact() {
           <input type="email" name="user_email" />
           <label>Message</label>
           <textarea name="message" />
-          <input className={styles.submit} type="submit" value="SEND" />
+          <motion.input className={styles.submit} type="submit" value="SEND" 
+          variants={hoverVariant}
+          whileHover='whileHover'
+          />
         </form>
       </main>
     </motion.div>

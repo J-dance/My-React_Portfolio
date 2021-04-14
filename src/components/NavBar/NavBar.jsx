@@ -15,7 +15,7 @@ import {
 
 const NavBar = () => {
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   return (
     <div className={styles.nav}>

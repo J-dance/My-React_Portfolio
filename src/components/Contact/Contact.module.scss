@@ -211,6 +211,10 @@
         letter-spacing: 0.3em;
         font-size: 24px;
         font-weight: 600;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
