@@ -2,9 +2,39 @@
 @import "../../assets/styles/variables";
 
 footer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   width: 100%;
 
-  border-top: 2px solid $my-black;
+  border-top: 1px solid $my-black;
   background: $background-colour;
+
+  a {
+    margin: 10%;
+  }
+
+  p {
+    position: absolute;
+    right: 10px;
+    font-family: $font-standard;
+    font-size: 22px;
+    letter-spacing: 0.2em;
+    color: $my-black;
+  }
+
+  .logo {
+    position: absolute;
+    left: 10px;
+    width: 75px;
+    height: 75px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
 }
