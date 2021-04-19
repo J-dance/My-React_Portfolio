@@ -1,5 +1,6 @@
 import React from 'react'
 import NavBar from "../NavBar";
+import Footer from "../Footer";
 import styles from "./Projects.module.scss";
 import { motion } from "framer-motion";
 import { componentTransition, projectCardVariant, cloudVariant } from "../../variants";
@@ -11,6 +12,7 @@ import {
 
 
 const Projects = () => {
+
   return (
     <motion.div className={`page ${styles.page}`}
       variants={componentTransition}
@@ -142,24 +144,29 @@ const Projects = () => {
             </motion.div>
           </a>
 
-          <motion.div className={`${styles.projectTile} ${styles.knowaste}`}
-          variants={componentTransition}
-          initial='hidden'
-          animate='visible'
-          >
-            {/* this shows the text on hover and clicking takes you to the website */}
-            <motion.div className={styles.tileMotion}
-            variants={projectCardVariant}
-            whileHover='hover'
-            whileTap='hover'
-            > 
-              <h3>KNO WASTE - CLIENT PROJECT</h3>
-              <p>Client project for Kno-waste - Bristol Uni start up, group project for 5 weeks, used React...</p>
+          <a href="https://knowaste-3c92c.web.app/" target="_blank">
+            <motion.div className={`${styles.projectTile} ${styles.knowaste}`}
+            variants={componentTransition}
+            initial='hidden'
+            animate='visible'
+            >
+              {/* this shows the text on hover and clicking takes you to the website */}
+              <motion.div className={styles.tileMotion}
+              variants={projectCardVariant}
+              whileHover='hover'
+              whileTap='hover'
+              > 
+                <h3>KNO WASTE - CLIENT PROJECT</h3>
+                <p>Client project for Kno-waste - Bristol Uni start up, group project for 5 weeks, used React...</p>
+              </motion.div>
             </motion.div>
-          </motion.div>
+          </a>
         </motion.section>
         
       </main>
+      <section className='footer'>
+        <Footer />
+      </section>
     </motion.div>
   )
 }

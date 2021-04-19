@@ -81,7 +81,7 @@ function Home() {
         </section>
 
       </main>
-      <section className={styles.footer}>
+      <section className='footer'>
         <Footer />
       </section>
     </motion.div>

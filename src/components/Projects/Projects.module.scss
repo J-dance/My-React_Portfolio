@@ -1,30 +1,20 @@
 // import global styles variables file
 @import "../../assets/styles/variables";
 
-.page {
-  height: 1600px;
-}
-
 .main{
   position: relative;
   display: grid ;
-  grid-template-columns: 1fr 1fr;
+  
   background: $background-colour;
 
   .title {
     position: absolute;
-
-    top: 10%;
-    left: 0%;
-    transform: rotate(320deg);
     font-family: $font-title;
     color: $my-black;
   }
   
   .leftBackground {
     position: relative;
-    grid-column-start: 1;
-    grid-column-end: 2;
 
     width: 100%;
     height: 100%;
@@ -33,47 +23,27 @@
 
     .cloudOne {
       position: absolute;
-      top: 3%;
-      left: 5%;
-      width: 200px;
-      height: 200px;
     }
 
     .cloudTwo {
       position: absolute;
-      top: 14%;
-      right: 5%;
-      width: 240px;
-      height: 240px;
     }
 
     .cloudThree {
       position: absolute;
-      top: 35%;
-      left: 5%;
-      width: 180px;
-      height: 180px;
     }
   }
 
   .rightBackground {
-    grid-column-start: 2;
-    grid-column-end: 3;
-
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
     width: 100%;
     height: 100%;
     background: radial-gradient(100% 50% at 100% 50%, rgba($secondary-colour, 0.82) 30%, rgba($secondary-colour, 0) 100%);
-
     overflow-x: hidden;
 
     .sun {
-      margin-right: -300px;
-      width: 600px;
-      height: 600px;
       border-radius: 50%;
       background: rgba($secondary-colour, 0.9);
     }
@@ -81,7 +51,7 @@
 
   .projectContainer {
     position: absolute;
-    top: 30%;
+    display: grid;
     left: 0%;
     width: 100%;
     height: auto;
@@ -90,13 +60,14 @@
       display: flex; 
       flex-direction: column;
       align-items: center;
-    
+      margin: auto;
       border: 2px solid $my-black;
-
+      border-radius: 30px;
       color: $my-black;
       font-family: $font-standard;
       background-position: center; 
       background-size: cover;
+      box-shadow: 3px 6px 6px 3px rgba($my-black, 0.8);
 
       .tileMotion {
         opacity: 0;
@@ -104,12 +75,13 @@
         width: 100%;
         border-radius: 30px;
        
-        p {
-          margin: 15px;
-        }
+        // p {
+        //   font-size: 22px;
+        //   margin: 15px;
+        // }
 
         &:hover {
-          background: rgba($background-colour, 0.3);
+          background: rgba($background-colour, 0.6);
         }
       }
 
@@ -135,7 +107,7 @@
     }
   
     .knowaste {
-      // background: $my-grey;
+      background-image: url('../../assets/images/knowaste.png');
     }
   }
 }
@@ -148,26 +120,75 @@
 
 // ultra-wide screen (for screens wider than desktop-breakpoint)
 @media screen and (min-width: $desktop-breakpoint) {
+
+  .page {
+    height: 2000px;
+  }
+
   .main {
-    
+
+
+    grid-template-columns: 1fr 1fr;
     .title {
+      top: 10%;
+      left: 0%;
+      transform: rotate(320deg);
       font-size: 96px;
       letter-spacing: 0.2em;
     }
     
-    .projectContainer {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      .projectTile {
+    .leftBackground {
+      grid-column-start: 1;
+      grid-column-end: 2;
+
+      .cloudOne {
+        top: 3%;
+        left: 5%;
+        width: 200px;
+        height: 200px;
+      }
   
-        margin: auto;
+      .cloudTwo {
+        top: 14%;
+        right: 5%;
+        width: 240px;
+        height: 240px;
+      }
+  
+      .cloudThree {
+        top: 35%;
+        left: 5%;
+        width: 180px;
+        height: 180px;
+      }
+    }
+
+    .rightBackground {
+      grid-column-start: 2;
+      grid-column-end: 3;
+
+      .sun {
+        margin-right: -300px;
+        width: 600px;
+        height: 600px;
+      }
+    }
+
+    .projectContainer {
+      grid-template-columns: 1fr 1fr;
+      top: 30%;
+      .projectTile {
         margin-top: 100px;
-        // padding: 15px;
-      
         width: 450px;
         height: 250px;
 
-        border-radius: 30px;
+        .tileMotion {
+          
+          p {
+            font-size: 22px;
+            margin: 15px;
+          }
+        }
   
         h3 {
           font-size: 24px;
@@ -180,27 +201,75 @@
 
 // desktop
 @media screen and (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint){
-  .main{
-    
+  .page {
+    height: 2700px;
+  }
+
+  .main {
+  
+    grid-template-columns: 1fr 1fr;
+
     .title {
-      font-size: 72px;
+      top: 8%;
+      left: 10%;
+      font-size: 96px;
       letter-spacing: 0.2em;
+      transform: rotate(340deg);
     }
     
+    .leftBackground {
+      grid-column-start: 1;
+      grid-column-end: 2;
+
+      .cloudOne {
+        top: 3%;
+        left: 5%;
+        width: 180px;
+        height: 180px;
+      }
+  
+      .cloudTwo {
+        top: 20%;
+        right: 5%;
+        width: 200px;
+        height: 200px;
+      }
+  
+      .cloudThree {
+        top: 35%;
+        left: 5%;
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    .rightBackground {
+      grid-column-start: 2;
+      grid-column-end: 3;
+
+      .sun {
+        margin-right: -250px;
+        width: 500px;
+        height: 500px;
+      }
+    }
+
     .projectContainer {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      grid-template-columns: 1fr;
+      top: 25%;
 
       .projectTile {
-  
-        margin: 30px;
-        padding: 15px;
-      
-        width: 200px;
-        height: 300px;
+        margin-top: 100px;
+        width: 500px;
+        height: 275px;
 
-        border-radius: 30px;
+        .tileMotion {
+          
+          p {
+            font-size: 22px;
+            margin: 15px;
+          }
+        }
   
         h3 {
           font-size: 24px;
@@ -213,34 +282,75 @@
 
 // Tablet
 @media screen and (min-width: $mob-breakpoint) and (max-width: $tablet-breakpoint){
-  .main{
-    
+  .page {
+    height: 2700px;
+  }
+
+  .main {
+  
+    grid-template-columns: 1fr 1fr;
 
     .title {
-      font-size: 72px;
-      letter-spacing: 0.3em;
-    }
-
-    .a {
-      all: revert;
-      
+      top: 8%;
+      left: 10%;
+      font-size: 96px;
+      letter-spacing: 0.2em;
+      transform: rotate(340deg);
     }
     
+    .leftBackground {
+      grid-column-start: 1;
+      grid-column-end: 2;
+
+      .cloudOne {
+        top: 3%;
+        left: 5%;
+        width: 180px;
+        height: 180px;
+      }
+  
+      .cloudTwo {
+        top: 20%;
+        right: 5%;
+        width: 200px;
+        height: 200px;
+      }
+  
+      .cloudThree {
+        top: 35%;
+        left: 5%;
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    .rightBackground {
+      grid-column-start: 2;
+      grid-column-end: 3;
+
+      .sun {
+        margin-right: -250px;
+        width: 500px;
+        height: 500px;
+      }
+    }
+
     .projectContainer {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      
+      grid-template-columns: 1fr;
+      top: 25%;
 
       .projectTile {
-  
-        margin: 30px;
-        padding: 15px;
-      
-        width: 200px;
-        height: 300px;
+        margin-top: 100px;
+        width: 500px;
+        height: 275px;
 
-        border-radius: 30px;
+        .tileMotion {
+          
+          p {
+            font-size: 22px;
+            margin: 15px;
+          }
+        }
   
         h3 {
           font-size: 24px;
@@ -253,33 +363,82 @@
 
 // mobile (below a certain width)
 @media screen and (max-width: $mob-breakpoint) {
+
+  .page {
+    height: 2000px;
+  }
+
   .main{
-    
+    grid-template-rows: 1fr 1fr;
+  
     .title {
-      font-size: 42px;
+      top: 10%;
+      left: 10%;
+      transform: rotate(330deg);
+      font-size: 48px;
       letter-spacing: 0.2em;
-      margin-top: 30px;
     }
     
-    .projectContainer {
-      display: flex;
-      flex-direction: column;
-      align-items: center;    
-
-      .projectTile {
+    .leftBackground {
+      grid-row-start: 1;
+      grid-row-end: 2;
   
-        margin-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 15px;
-      
-        width: 80%;
-        height: 300px;
+      .cloudOne {
+        top: 6%;
+        left: 5%;
+        width: 150px;
+        height: 150px;
+      }
+  
+      .cloudTwo {
+        top: 25%;
+        right: 5%;
+        width: 150px;
+        height: 150px;
+      }
+  
+      .cloudThree {
+        // position: absolute;
+        top: 40%;
+        left: 5%;
+        width: 140px;
+        height: 140px;
+      }
+    }
+  
+    .rightBackground {
+      grid-row-start: 2;
+      grid-row-end: 3;
+  
+      .sun {
+        margin-right: -200px;
+        width: 400px;
+        height: 400px;
+      }
+    }
+  
+    .projectContainer {
+      grid-template-columns: 1fr;
+      top: 20%;
+    
+      .projectTile {
+     
+        margin-top: 100px;
+        width: 325px;
+        height: 175px;
 
         border-radius: 30px;
   
+        .tileMotion {
+          
+          p {
+            font-size: 12px;
+            margin: 10px;
+          }
+        }
+  
         h3 {
-          font-size: 16px;
+          font-size: 18px;
           letter-spacing: 0.1em;
         }
       }

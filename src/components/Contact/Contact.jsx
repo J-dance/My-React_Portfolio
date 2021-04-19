@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Contact.module.scss';
 import NavBar from "../NavBar";
+import Footer from "../Footer";
 import { motion } from "framer-motion";
 import { componentTransition, hoverVariant } from "../../variants";
 import emailjs from 'emailjs-com';
@@ -44,6 +45,10 @@ function Contact() {
           />
         </form>
       </main>
+
+      <section className='footer'>
+        <Footer />
+      </section>
     </motion.div>
   )
 }
