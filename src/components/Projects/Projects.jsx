@@ -85,7 +85,7 @@ const Projects = () => {
               whileTap='hover'
               >
                 <h3>MY CALCULATOR</h3>
-                <p>This was one of my first JavaScript applications. It is a calculator with basic functionality. Bootstrap was used for styling, tests were used...</p>
+                <p>My first project integrating HTMl, CSS/SCSS and JavaScript. Designed and built a calculator with basic functionality. I used Bootstrap for styling and used cypress for e2e testing.</p>
               </motion.div>
             </div>
           </a>
@@ -103,7 +103,7 @@ const Projects = () => {
               whileTap='hover'
               > 
                 <h3>MY JS-GAME</h3>
-                <p>A grid based game built in javascript...</p>
+                <p>My first game built using JavaScript with HTML and CSS/SCSS. Grid-based game using JavaScript to render the player movement and execute checks on the player when at certain positions.</p>
               </motion.div>
             </motion.div>
           </a>
@@ -121,7 +121,7 @@ const Projects = () => {
               whileTap='hover'
               >
                 <h3>MORSE CODE TRANSLATOR</h3>
-                <p>Morse code translator, wither english to morse or vice versa...</p>
+                <p>Built an English to morse code and vice versa translator using JavaScript, HTML and CSS/SCSS. Used test driven development to build the functionality of the translator. Used JS framework Jest for unit testing.</p>
               </motion.div>
             </motion.div>
           </a>
@@ -139,7 +139,7 @@ const Projects = () => {
               whileTap='hover'
               >
                 <h3>PUNK IPA API</h3>
-                <p>BUilt a front end for a punk ipa api with search and filter features...</p>
+                <p>Built a frontend for an API with a search bar and filter features for the results. Projects built using React.</p>
               </motion.div>
             </motion.div>
           </a>
@@ -157,7 +157,7 @@ const Projects = () => {
               whileTap='hover'
               > 
                 <h3>KNO WASTE - CLIENT PROJECT</h3>
-                <p>Client project for Kno-waste - Bristol Uni start up, group project for 5 weeks, used React...</p>
+                <p>Client project for Bristol-uni start-up knowaste. Built in React using firebase for storage and authentication. App containes a user and admin portal, where users can select and save meal options, view profile information and view a leaderboard of their user stats. Admin can upload meal options and create timetables, as well as calculate totals from all the users data.</p>
               </motion.div>
             </motion.div>
           </a>

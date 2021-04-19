@@ -39,3 +39,35 @@ footer {
     height: 40px;
   }
 }
+
+// responsive designs
+
+// tablet design
+@media screen and (min-width: $mob-breakpoint) and (max-width: $tablet-breakpoint){
+  footer {  
+    p {
+      font-size: 16px;
+      letter-spacing: 0.1em;
+    }
+
+  }
+}
+
+// mobile design
+@media screen and (max-width: $mob-breakpoint) {
+  footer {
+
+    a {
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+  
+    p {
+      display: none;
+    }
+  
+    .logo {
+      display: none;
+    }
+  }
+}

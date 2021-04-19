@@ -5,10 +5,6 @@
   position: sticky;
   top: 0;
   z-index: 10;
-  // grid-row-start: 1;
-  // grid-row-end: 2;
-
-  // position: relative;
 
   display: flex;
   flex-direction: row;
@@ -40,8 +36,6 @@
     margin: auto;
 
     li {
-      display: inline;
-      
       &:hover {
         text-decoration: underline;
       }
@@ -76,6 +70,7 @@
       li {
         display: inline;
         margin: 80px;
+        font-size: 20px;
       }
     }
   }
@@ -90,7 +85,8 @@
         
       li {
         display: inline;
-        margin: 12%;
+        margin: 20px;
+        font-size: 18px;
       }
     }
   }
@@ -104,7 +100,8 @@
   
       li {
         display: inline;
-        margin: auto;
+        margin: 20px;
+        font-size: 22px;
       }
     }
   }
@@ -118,7 +115,8 @@
 
       li {
         display: inline;
-        margin: auto;
+        margin: 5px;
+        font-size: 12px;
       }
     }
   }

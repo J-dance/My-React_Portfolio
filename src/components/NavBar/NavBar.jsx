@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect} from 'react'
 import styles from "./NavBar.module.scss";
 import { motion } from "framer-motion";
 import { HashLink as Link } from 'react-router-hash-link';
@@ -16,6 +16,15 @@ import {
 const NavBar = () => {
 
   const [isOpen, setIsOpen] = useState(true);
+
+  // on page load
+  useEffect(() => {
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth < 480) {
+      setIsOpen(false);
+    }
+  }, [])
 
   return (
     <div className={styles.nav}>
