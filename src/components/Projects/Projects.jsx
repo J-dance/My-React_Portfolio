@@ -126,7 +126,7 @@ const Projects = () => {
             </motion.div>
           </a>
 
-          <a href="https://j-dance.github.io/Punk-IPA-API/" target="_blank" >
+          <a href="https://punk-api-c0095.web.app/" target="_blank" >
             <motion.div className={`${styles.projectTile} ${styles.punk}`}
             variants={componentTransition}
             initial='hidden'
