@@ -73,8 +73,14 @@
         font-size: 20px;
       }
     }
+
+    .icon {
+      display: none;
+    }
   }
-  
+  .bigHeight {
+    height: 100%;
+  }
 }
 
 // desktop
@@ -89,6 +95,14 @@
         font-size: 18px;
       }
     }
+
+    .icon {
+      display: none;
+    }
+  }
+
+  .bigHeight {
+    height: 100%;
   }
 }
 
@@ -105,19 +119,26 @@
       }
     }
   }
+
+  .bigHeight {
+    height: 200% !important;
+  }
 }
 
 // mobile (below a certain width)
 @media screen and (max-width: $mob-breakpoint) {
   .nav {
-  
     ul {
 
       li {
-        display: inline;
-        margin: 5px;
-        font-size: 12px;
+        // display: inline;
+        margin: 20px;
+        font-size: 18px;
       }
     }
+  }
+
+  .bigHeight {
+    height: 300% !important;
   }
 }

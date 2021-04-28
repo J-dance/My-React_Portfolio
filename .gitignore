@@ -18,6 +18,7 @@ emailjs.js
 .env.development.local
 .env.test.local
 .env.production.local
+ElementAnimations.js
 
 npm-debug.log*
 yarn-debug.log*

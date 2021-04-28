@@ -27,7 +27,7 @@ const NavBar = () => {
   }, [])
 
   return (
-    <div className={styles.nav}>
+    <div className={isOpen ? `${styles.nav} ${styles.bigHeight}`:`${styles.nav}` }>
       <div className={styles.logo}>
         <Link to="/" className={styles.link}><img src={Logo}></img></Link>
       </div>
