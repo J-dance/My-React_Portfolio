@@ -4,16 +4,12 @@
 .page {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 60px 1fr 60px;
-
   width: 100vw;
 }
 
 .main {
   grid-row-start: 2;
   grid-row-end: 3;
-
-
   height: 100%;
   width: 100%;
 }
@@ -28,7 +24,7 @@
 /* ultra-wide screen (for screens wider than desktop-breakpoint) */
 @media screen and (min-width: 1024px) {
   .page {
-    /* grid-template-rows: 60px 1fr; */
+    grid-template-rows: 60px 1fr 60px;
 
   }
 }
@@ -36,7 +32,7 @@
 /* desktop */
 @media screen and (min-width: 768px) and (max-width: 1024px){
   .page {
-    /* grid-template-rows: 60px 1fr; */
+    grid-template-rows: 60px 1fr 60px;
 
   }
 }
@@ -44,7 +40,7 @@
 /* Tablet */
 @media screen and (min-width: 480px) and (max-width: 768px){
   .page {
-    /* grid-template-rows: 60px 1fr; */
+    grid-template-rows: 80px 1fr 60px;
 
   }
 }
@@ -52,7 +48,7 @@
 /* mobile (below a certain width) */
 @media screen and (max-width: 480px) {
   .page {
-    /* grid-template-rows: 60px auto; */
+    grid-template-rows: 80px 1fr 60px;
 
   }
 }

@@ -28,7 +28,7 @@ const NavBar = () => {
 
   return (
     <div className={isOpen ? `${styles.nav} ${styles.bigHeight}`:`${styles.nav}` }>
-      <div className={styles.logo}>
+      <div className={isOpen ? `${styles.invisible} ${styles.logo}`: styles.logo}>
         <Link to="/" className={styles.link}><img src={Logo}></img></Link>
       </div>
       {
@@ -40,22 +40,18 @@ const NavBar = () => {
           exit='exit'
           transition={{duration: 1, ease: 'easeInOut'}}
           >
-          <Link to='/home' className={styles.link} ><motion.li
-          variants={hoverVariant}
-          whileHover='whileHover'
-          >HOME</motion.li></Link>
-          <Link to="/home#aboutSection" className={styles.link}><motion.li
-          variants={hoverVariant}
-          whileHover='whileHover'
-          >ABOUT</motion.li></Link>
-          <Link to='/projects' className={styles.link}><motion.li
-          variants={hoverVariant}
-          whileHover='whileHover'
-          >PROJECTS</motion.li></Link>
-          <Link to='/contact' className={styles.link}><motion.li
-          variants={hoverVariant}
-          whileHover='whileHover'
-          >CONTACT</motion.li></Link>
+          <li >
+            <Link to='/home' className={styles.link} >HOME</Link>
+          </li>
+          <li>
+            <Link to="/home#aboutSection" className={styles.link}>ABOUT</Link>
+          </li>
+          <li>
+            <Link to='/projects' className={styles.link}>PROJECTS</Link>
+          </li>
+          <li>
+            <Link to='/contact' className={styles.link}>CONTACT</Link>
+          </li>
         </motion.ul>
       }
       <div className={styles.menu} onClick={() => setIsOpen(!isOpen)}
