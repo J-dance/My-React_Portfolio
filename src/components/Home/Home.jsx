@@ -76,7 +76,7 @@ function Home() {
         
         {/* render about section */}
         
-        <section className={styles.about} id="aboutSecion">
+        <section className={styles.about} id="aboutSection">
           <About />
         </section>
 

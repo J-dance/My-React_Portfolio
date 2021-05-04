@@ -6,129 +6,115 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: auto;
   padding: 0px;
   background: $my-grey;
 
   .title {
-    // font-size: 102px;
-    // letter-spacing: 0.3em;
-    color: $primary-colour;
-    font-family: $font-title;
-
-    // margin-top: 100px;
+    color: $my-black;
+    font-family: $font-standard;
+    border: 5px solid $secondary-colour;
+    border-radius: 30px;
+    padding: 10px;
   }
 
   .blankBoxRight {
     border-radius: 30px 0px 0px 30px;
-    // height: 80%;
   }
 
   .blankBoxLeft {
     border-radius: 0px 30px 30px 0px;
-    // height: 100%;
+  }
+
+  .profile_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: rgba($primary-colour, 0.7);
+  }
+
+  .profile_container_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid $my-grey;
+    border-radius: 50%;
+    padding: 0px;
+
+    .profileImage {
+      object-fit: cover;
+      border-radius: 50%;
+      filter: grayscale(50%);
+    }
   }
   
   .aboutText {
-    // position: relative;
     display: flex;
-    // flex-direction: row;
-    // align-items: center;
-    // justify-content: space-between;
     font-family: $font-standard;
-
     width: 100%;
-    // height: 200px;
-    // margin-top: 100px;
-    // margin-bottom: 200px;
 
     .blankBox {
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 30px;
-
       background: $background-colour;
 
-      // width: 60%;
-      // z-index: 2;
-
       p {
-        // font-size: 24px;
         color: $my-black;
       }
     }
+  }
 
-    .profileImage {
-      // position: absolute;
-      // height: 450px;
-      // width: 450px;
-      // right: 2%;
-      // top: -50%;
+  .svg, .svg_grad {
+    object-fit: cover;
+  }
 
-      object-fit: cover;
-      // z-index: 0;
-      border-radius: 50%;
-      filter: grayscale(80%);
-    }
+  .break {
+    height: 35vh;
+    width: 100vw;
+    background: $background-colour;
+  }
 
-    .svg {
-      // width: 350px;
-      // height: 180px;
-      object-fit: cover;
-      // margin-left: 5%;
-    }
+  // skills/my tech section
+
+  .tech_background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    background-color: $background-colour;
+    padding: 0px;
   }
 
   .techContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 100%;
     height: auto;
     padding: 30px;
+    background: rgba($primary-colour, 0.7);
 
     .techTitle {
-      // font-size: 72px;
-      // letter-spacing: 0.3em;
-      color: $my-pink;
-      font-family: $font-title;
+      color: $background-colour;
+      font-family: $font-standard;
       text-align: center;
-      // margin-bottom: 150px;
+      border: 5px solid $secondary-colour;
+      border-radius: 30px;
+      padding: 10px;
     }
 
     .techIconContainer {
       display: flex;
-      // flex-direction: row;
-      // align-items: center;
-      // justify-content: space-between;
-
-      // background: $my-pink;
-      width: 100%;
-      // height: 100px;
-
-      .iconTile {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      
-
-        img {
-          // width: 100px;
-          // height: 100px;
-          object-fit: cover;
-        }
-
-        p {
-          text-align: center;
-          font-family: $font-standard;
-          color: $my-black;
-          // font-weight: 600;
-          // font-size: 28px;
-          margin: 0px;
-        }
-      }
+      flex-direction: column;
+      align-items: center;
+      border-radius: 30px;
+      border: 5px solid $secondary-colour;
+      height: auto;
+      background: $background-colour;
+      padding-bottom: 20px;
     }
   }
 }
@@ -139,10 +125,11 @@
   .main {
     
     .title {
-      font-size: 102px;
+      font-size: 72px;
       letter-spacing: 0.3em;
-      
+      padding-left: 0.3em;
       margin-top: 100px;
+      margin-bottom: 50px;
     }
     
     .aboutText {
@@ -152,60 +139,69 @@
       width: 100%;
       height: 200px;
       margin-top: 100px;
-      margin-bottom: 200px;
+      margin-bottom: 100px;
+
+      .blankBoxRight {
+        margin-left: 25%;
+      }
   
       .blankBox {
-        padding: 30px;
-        width: 55%;
+        padding: 15px 30px;
+        width: 75%;
 
         p {
           font-size: 24px;
         }
       }
-  
+    }
+
+    .profile_container {
+      margin-top: 200px;
+      margin-bottom: 150px;
+      height: 200px;
+    }
+
+    .profile_container_round {
+      height: 350px;
+      aspect-ratio: 1/1;
+      
+    
       .profileImage {
-        height: 450px;
-        width: 450px;
+        height: 350px;
+        width: 350px;
         margin-left: auto;
         margin-right: auto;
       }
-  
-      .svg {
-        width: 350px;
-        height: 180px;
-        margin-left: 5%;
-      }
+    }
+
+    .svg {
+      margin-top: 50px;
+      margin-bottom: 150px;
+      width: 40vw;
+      height: auto;
+    }
+
+    .svg_grad {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      width: 50vw;
+      height: auto;
     }
   
+    // skills/my tech
+
     .techContainer {
-      width: 80%;
       padding: 30px;
   
       .techTitle {
         font-size: 72px;
         letter-spacing: 0.3em;
+        padding-left: 0.3em;
         margin-bottom: 150px;
       }
   
       .techIconContainer {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        height: 100px;
-  
-        .iconTile {
-          img {
-            width: 100px;
-            height: 100px;
-          }
-  
-          p {
-            font-weight: 600;
-            font-size: 28px;
-            margin: 0px;
-          }
-        }
+        width: 60%;
       }
     }
   }
@@ -216,9 +212,11 @@
   .main {
     
     .title {
-      font-size: 102px;
+      font-size: 96px;
       letter-spacing: 0.3em;
-      margin-top: 120px;
+      padding-left: 0.3em;
+      margin-top: 100px;
+      margin-bottom: 50px;
     }
     
     .aboutText {
@@ -227,63 +225,68 @@
       justify-content: space-between;
       width: 100%;
       height: auto;
-      margin-top: 80px;
+      margin-top: 100px;
       margin-bottom: 100px;
+
+      .blankBoxRight {
+        margin-left: 25%;
+      }
   
       .blankBox {
-        padding: 20px;
-        width: 55%;
+        padding: 15px;
+        width: 75%;
 
         p {
-          font-size: 22px;
+          font-size: 26px;
         }
       }
-  
+    }
+
+    .profile_container {
+      margin-top: 200px;
+      margin-bottom: 150px;
+      height: 200px;
+    }
+
+    .profile_container_round {
+      height: 400px;
+      aspect-ratio: 1/1;
+
       .profileImage {
-        height: 320px;
-        width: 320px;
-        margin-right: auto;
-        margin-left: auto;
-      }
-  
-      .svg {
-        width: 300px;
-        height: 150px;
+        height: 400px;
+        width: 400px;
         margin-left: auto;
         margin-right: auto;
       }
     }
+
+    .svg {
+      margin-top: 50px;
+      margin-bottom: 150px;
+      width: 50vw;
+      height: auto;
+    }
+
+    .svg_grad {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      width: 50vw;
+      height: auto;
+    }
+  
   
     .techContainer {
-      width: 80%;
       padding: 30px;
   
       .techTitle {
-        font-size: 72px;
+        font-size: 96px;
         letter-spacing: 0.3em;
+        padding-left: 0.3em;
         margin-bottom: 100px;
       }
   
       .techIconContainer {
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-evenly;
-        width: 100%;
-        height: 100px;
-  
-        .iconTile {
-          margin: 40px;
-          img {
-            width: 100px;
-            height: 100px;
-          }
-  
-          p {
-            font-weight: 600;
-            font-size: 28px;
-            margin: 0px;
-          }
-        }
+        width: 80%;
       }
     }
   }
@@ -294,9 +297,11 @@
   .main {
     
     .title {
-      font-size: 86px;
+      font-size: 72px;
       letter-spacing: 0.3em;
-      margin-top: 50px;
+      padding-left: 0.3em;
+      margin-top: 100px;
+      margin-bottom: 25px;
     }
     
     .aboutTextRight {
@@ -308,7 +313,7 @@
       flex-direction: column-reverse;
       width: 100%;
       height: auto;
-      margin-top: 20px;
+      margin-top: 100px;
       margin-bottom: 100px;
   
       .blankBox {
@@ -319,26 +324,41 @@
           font-size: 24px;
         }
       }
-  
-      .profileImage {
-        height: 320px;
-        width: 320px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 100px;
-      }
-  
-      .svg {
-        width: 350px;
-        height: 180px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 100px;
-      }
+    }
+    
+    .profile_container {
+      margin-top: 200px;
+      margin-bottom: 125px;
+      height: 150px;
     }
   
+    .profile_container_round {
+      height: 350px;
+      aspect-ratio: 1/1;
+
+      .profileImage {
+        height: 350px;
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .svg {
+      margin-top: 50px;
+      margin-bottom: 150px;
+      width: 50vw;
+      height: auto;
+    }
+
+    .svg_grad {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      width: 60vw;
+      height: auto;
+    }
+
     .techContainer {
-      width: 80%;
       padding: 30px;
   
       .techTitle {
@@ -348,26 +368,7 @@
       }
   
       .techIconContainer {
-        // flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-evenly;
-        width: 100%;
-        height: 100px;
-  
-        .iconTile {
-          margin: 35px;
-          img {
-            width: 100px;
-            height: 100px;
-          }
-  
-          p {
-            font-weight: 600;
-            font-size: 28px;
-            margin: 0px;
-          }
-        }
+        width: 80%;
       }
     }
   }
@@ -379,9 +380,11 @@
   .main {
     
     .title {
-      font-size: 64px;
+      font-size: 58px;
       letter-spacing: 0.2em;
-      margin-top: 50px;
+      padding-left: 0.2em;
+      margin-top: 100px;
+      margin-bottom: 25px;
     }
     
     .aboutTextRight {
@@ -393,65 +396,63 @@
       flex-direction: column-reverse;
       width: 100%;
       height: auto;
-      margin-top: 20px;
+      margin-top: 100px;
       margin-bottom: 100px;
   
       .blankBox {
-        padding: 20px;
+        padding: 15px;
         width: 80%;
 
         p {
-          font-size: 18px;
+          font-size: 16px;
         }
       }
-  
+    }
+
+    .profile_container {
+      margin-top: 150px;
+      margin-bottom: 100px;
+      height: 100px;
+    }
+    
+    .profile_container_round {
+      height: 225px;
+      aspect-ratio: 1/1;
+
       .profileImage {
-        height: 280px;
-        width: 280px;
+        height: 225px;
+        width: 225px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 100px;
       }
-  
-      .svg {
-        width: 300px;
-        height: 180px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 100px;
-      }
+    }
+
+    .svg {
+      margin-top: 50px;
+      margin-bottom: 150px;
+      width: 70vw;
+      height: auto;
+    }
+
+    .svg_grad {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      width: 80vw;
+      height: auto;
     }
   
     .techContainer {
-      width: 80%;
       padding: 30px;
   
       .techTitle {
         font-size: 58px;
         letter-spacing: 0.3em;
+        padding-left: 0.3em;
         margin-bottom: 100px;
       }
   
       .techIconContainer {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        height: 100px;
-  
-        .iconTile {
-          margin-bottom: 50px;
-          img {
-            width: 100px;
-            height: 100px;
-          }
-  
-          p {
-            font-weight: 600;
-            font-size: 28px;
-            margin: 0px;
-          }
-        }
+        width: 90%;
       }
     }
   }

@@ -44,7 +44,7 @@ const NavBar = () => {
           variants={hoverVariant}
           whileHover='whileHover'
           >HOME</motion.li></Link>
-          <Link to="/home#aboutSecion" className={styles.link}><motion.li
+          <Link to="/home#aboutSection" className={styles.link}><motion.li
           variants={hoverVariant}
           whileHover='whileHover'
           >ABOUT</motion.li></Link>
