@@ -1,0 +1,121 @@
+@import "../../../assets//styles/variables";
+
+.project {
+  position: relative;
+  border: 3px solid $my-black;
+  border-radius: 30px;
+  height: auto;
+  margin: 50px;
+  padding: 0px;
+  overflow: hidden;
+  font-family: $font-standard;
+  color: $my-black;
+
+  .main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+
+    .title {
+      text-align: center;
+      z-index: 2;
+    }
+
+    .icon_container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-bottom: 25px;
+      margin-top: 25px;
+      width: 100%;
+      z-index: 2;
+    }
+
+    .icon {
+      aspect-ratio: 1/1;
+      height: auto;
+      width: 15%;
+    }
+
+   .cover {
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-color: rgba($background-colour, 0.8);
+    }
+
+    .cover, .icon, .title {
+      visibility: hidden;
+    }
+  }
+
+  :hover {
+    cursor: pointer;
+    .title, .icon, .cover {
+      visibility: visible;
+    }
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // padding: 30px;
+    z-index: 2;
+    margin: 0px;
+    width: 100%;
+    background: rgba($background-colour, 0.6);
+
+    p {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+   a {
+     color: $my-black;
+     font-weight: 600;
+     text-decoration: none;
+     :hover {
+       color: $secondary-colour;
+       text-decoration: underline;
+     }
+   }
+  }
+}
+
+.orange_border {
+  border: 5px solid $secondary-colour;
+}
+
+// Responsive design
+
+// ultra-wide screen (for screens wider than desktop-breakpoint)
+@media screen and (min-width: $desktop-breakpoint) {
+  .project {
+    width: 50%;
+  }
+}
+
+// desktop
+@media screen and (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint){
+  .project {
+    width: 55%;
+  }
+}
+
+// Tablet
+@media screen and (min-width: $mob-breakpoint) and (max-width: $tablet-breakpoint){
+  .project {
+    width: 60%;
+  }
+}
+
+// mobile (below a certain width)
+@media screen and (max-width: $mob-breakpoint) {
+  .project {
+    width: 80%;
+  }
+}

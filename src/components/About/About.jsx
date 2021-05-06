@@ -73,7 +73,7 @@ function About() {
             <Skill image={sassSVG} name="SASS/SCSS" projects={["Calculator", "KnoWaste MVP"]}/>
 
             {/* Angular */}
-            <Skill image={angularSVG} name="Angular" projects={["Bahng-mi (..in progress)"]}/>
+            <Skill image={angularSVG} name="Angular" projects={["BànhG-mì (..in progress)"]}/>
 
             {/* Next */}
             <Skill image={nextSVG} name="Next" projects={["Danceability App (..in progress)"]}/>
