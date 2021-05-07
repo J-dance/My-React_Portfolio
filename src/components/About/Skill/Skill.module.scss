@@ -17,6 +17,16 @@
       font-family: $font-standard;
       color: $my-black;
     }
+
+    a {
+      text-decoration: none;
+      color: $my-black;
+    }
+
+    a:hover {
+      color: $secondary-colour;
+      text-decoration: underline;
+    }
   }
 }
 

@@ -3,6 +3,7 @@ import styles from './Contact.module.scss';
 import NavBar from "../NavBar";
 import Footer from "../Footer";
 import { motion } from "framer-motion";
+import socialSVG from '../../assets/SVGs/social.svg';
 import { componentTransition, hoverVariant } from "../../variants";
 import emailjs from 'emailjs-com';
 import { service_id, template_id, user_id} from "../../emailjs";
@@ -27,9 +28,13 @@ function Contact() {
       exit='exit'
     >
       <NavBar />
-      <main className={`mainz ${styles.main}`}>
+      <main className={`main ${styles.main}`}>
         <div className={styles.titleContainer}>
           <h1 className={styles.title}>CONTACT</h1>
+          <div className={styles.titleText}>
+            <p>If you like my work and fancy working together, say hi and leave a message!</p>
+            <img src={socialSVG} />
+          </div>
         </div>
         <form className={styles.contactForm} onSubmit={sendEmail}>
           <input type="hidden" name="contact_number" />

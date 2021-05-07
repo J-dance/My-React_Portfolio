@@ -2,84 +2,86 @@
 @import "../../assets/styles/variables";
 
 .main {
-  // display: flex;
-  // justify-content: center;
-
   display: grid;
-  // grid-template-columns: 1fr 1fr;
-  align-items: center;
   justify-content: center;
-
-  background: $background-colour;
-  height: 90vh;
+  background: rgba($primary-colour, 0.7);
+  height: auto;
 
   .titleContainer {
-    grid-column-start: 1;
-    grid-column-end: 2;
-
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
 
     height: 100%;
     width: 100%;
-
-    background: $my-black;
   
     .title {
-    
-      font-family: $font-serif;
-      // font-size: 96px;
-      // letter-spacing: 0.1em;
+      font-family: $font-standard;
       color: $background-colour;
+      margin-top: 35px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 10px;
+      border: 5px solid $secondary-colour;
+      border-radius: 30px;
+    }
+
+    .titleText {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 85%;
+      height: auto;
+
+      p {
+        text-align: center;
+        font-family: $font-standard;
+        font-weight: 500;
+        font-size: 24px;
+        color: $background-colour;
+      }
+
+      img {
+        height: auto;
+      }
     }
   }
 
   .contactForm {
-    grid-column-start: 2;
-    grid-column-end: 3;
-
     display: flex;
     flex-direction: column;
-    // width: 70%;
-    margin: auto;
-
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding: 30px;
+    border: 5px solid $secondary-colour;
+    border-radius: 30px;
     font-family: $font-standard;
     color: $my-black;
-    // font-size: 18px;
+    background: rgba($background-colour, 1);
 
     input {
-      // margin-top: 10px;
-      // margin-bottom: 20px;
-      // padding: 5px;
-      // border-radius: 20px;
       border: 2px solid $my-black;
       font-family: $font-standard;
       color: $my-black;
     }
 
     textarea {
-      // margin-top: 10px;
-      // height: 100px;
-      // padding: 5px;
       border: 2px solid $my-black;
       font-family: $font-standard;
       color: $my-black;
-      // border-radius: 20px;
     }
 
     .submit {
-      // width: 100px;
       margin-left: auto;
       margin-right: auto;
-      // margin-top: 30px;
       background: transparent;
       border: transparent;
       font-family: $font-standard;
       color: $my-pink;
-      // letter-spacing: 0.3em;
-      // font-size: 16px;
-      // font-weight: 600;
     }
   }
 }
@@ -92,28 +94,40 @@
     grid-template-columns: 1fr 1fr;
   
     .titleContainer {
-      overflow: hidden;
+      grid-column-start: 1;
+      grid-column-end: 2;
       .title {
-        font-size: 96px;
-        letter-spacing: 0.2em;
+        font-size: 56px;
+        letter-spacing: 0.3em;
+        padding-left: calc(0.3em +  10px);
+      }
+
+      .titleText {
+        img {
+          width: 25%;
+        }
+
+        padding: 20px;
       }
     }
   
     .contactForm {
+      grid-column-start: 2;
+      grid-column-end: 3;
       width: 70%;
       font-size: 18px;
   
       input {
         margin-top: 10px;
         margin-bottom: 20px;
-        padding: 5px;
+        padding: 7px;
         border-radius: 20px;
       }
   
       textarea {
         margin-top: 10px;
         height: 100px;
-        padding: 5px;
+        padding: 10px;
         border-radius: 20px;
       }
   
@@ -134,29 +148,40 @@
     grid-template-columns: 1fr 1fr;
   
     .titleContainer {
-      overflow: hidden;
-
+      grid-column-start: 1;
+      grid-column-end: 2;
       .title {
-        font-size: 64px;
-        letter-spacing: 0.1em;
+        font-size: 56px;
+        letter-spacing: 0.3em;
+        padding-left: calc(0.3em +  10px);
+      }
+
+      .titleText {
+        img {
+          width: 25%;
+        }
+
+        padding: 20px;
       }
     }
   
     .contactForm {
+      grid-column-start: 2;
+      grid-column-end: 3;
       width: 70%;
-      font-size: 22px;
+      font-size: 18px;
   
       input {
         margin-top: 10px;
         margin-bottom: 20px;
-        padding: 5px;
+        padding: 7px;
         border-radius: 20px;
       }
   
       textarea {
         margin-top: 10px;
         height: 100px;
-        padding: 5px;
+        padding: 10px;
         border-radius: 20px;
       }
   
@@ -174,34 +199,48 @@
 // Tablet
 @media screen and (min-width: $mob-breakpoint) and (max-width: $tablet-breakpoint){
   .main {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
   
     .titleContainer {
-      overflow: hidden;
-    
+      grid-row-start: 1;
+      grid-row-end: 2;
       .title {
-        font-size: 86px;
+        font-size: 48px;
         letter-spacing: 0.3em;
-        transform: rotate(270deg);
-        margin: 0px;
+        padding-left: calc(0.3em + 10px);
+        margin-top: 100px;
+      }
+      .titleText {
+        
+        img {
+          width: 40%;
+          margin-bottom: 50px;
+        }
+        p { 
+          padding: 0px;
+          margin-top: 50px;
+          margin-bottom: 50px;
+        }
       }
     }
   
     .contactForm {
-      width: 75%;
-      font-size: 22px;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      width: 65%;
+      font-size: 16px;
   
       input {
         margin-top: 10px;
         margin-bottom: 20px;
-        padding: 8px;
+        padding: 7px;
         border-radius: 20px;
       }
   
       textarea {
         margin-top: 10px;
         height: 100px;
-        padding: 5px;
+        padding: 10px;
         border-radius: 20px;
       }
   
@@ -209,12 +248,8 @@
         width: 100px;
         margin-top: 30px;
         letter-spacing: 0.3em;
-        font-size: 24px;
+        font-size: 16px;
         font-weight: 600;
-
-        &:hover {
-          text-decoration: underline;
-        }
       }
     }
   }
@@ -223,34 +258,44 @@
 // mobile (below a certain width)
 @media screen and (max-width: $mob-breakpoint) {
   .main {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
   
     .titleContainer {
-      overflow: hidden;
-    
+      grid-row-start: 1;
+      grid-row-end: 2;
       .title {
-        font-size: 48px;
+        font-size: 32px;
         letter-spacing: 0.2em;
-        transform: rotate(270deg);
-        margin: 0px;
+        padding-left: calc(0.2em + 10px);
+      }
+      .titleText {
+        
+        img {
+          width: 50%;
+        }
+        p { 
+          padding: 0px;
+        }
       }
     }
   
     .contactForm {
-      width: 80%;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      width: 65%;
       font-size: 16px;
   
       input {
         margin-top: 10px;
         margin-bottom: 20px;
-        padding: 5px;
+        padding: 7px;
         border-radius: 20px;
       }
   
       textarea {
         margin-top: 10px;
         height: 100px;
-        padding: 5px;
+        padding: 10px;
         border-radius: 20px;
       }
   

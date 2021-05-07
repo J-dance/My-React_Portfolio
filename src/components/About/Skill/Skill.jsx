@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Skill.module.scss'
 
 const Skill = (props) => {
-  const {image, name, projects} = props;
+  const {image, name, projects, links} = props;
   return (
     <div className={name == "Testing" ? styles.skill: `${styles.skill} ${styles.underline}`}>
       <img src={image}></img>
@@ -12,9 +12,11 @@ const Skill = (props) => {
         <h3>Projects:</h3>
         <ul>
           {
-            projects.map(project => {
+            projects.map((project, index) => {
               return (
-                <li>{project}</li>
+                <li>
+                  <a href={links[index]} target="_blank">{project}</a>
+                </li>
               )
             })
           }

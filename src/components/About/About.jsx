@@ -2,8 +2,6 @@ import React from 'react'
 import styles from "./About.module.scss";
 import NavBar from "../NavBar";
 import Skill from './Skill/index';
-import { motion } from "framer-motion";
-import { componentTransition } from "../../variants";
 import profilePic from "../../assets/images/profile.JPG";
 import web_design from '../../assets/SVGs/web_design.svg';
 import htmlSVG from "../../assets/SVGs/html5.svg";
@@ -20,6 +18,7 @@ import firebaseSVG from '../../assets/SVGs/firebase.svg';
 import testSVG from '../../assets/SVGs/testing.svg';
 import gitSVG from '../../assets/SVGs/github-svgrepo-com.svg';
 import graduation from "../../assets/SVGs/graduation.svg";
+import Pdf from '../../assets/pdfs/cv.pdf';
 
 function About() {
   return (
@@ -52,44 +51,49 @@ function About() {
           <div className={styles.techIconContainer}>
             
             {/* JS */}
-            <Skill image={jsSVG} name="JavaScript ES6+" projects={["JS Game", "Punk IPA API"]}/>
+            <Skill image={jsSVG} name="JavaScript ES6+" projects={["JS Game", "Punk IPA API"]} links={["https://github.com/J-dance/My-Javescript-Game", "https://github.com/J-dance/Punk-IPA-API"]}/>
            
             {/* HTML */}
-            <Skill image={htmlSVG} name="HTML 5" projects={["Calculator", "Morse Code Translator"]}/>
+            <Skill image={htmlSVG} name="HTML 5" projects={["Calculator", "Morse Code Translator"]} links={["https://github.com/J-dance/My-Calculator", "https://github.com/J-dance/Morse-Code-Translator"]}/>
 
             {/* CSS */}
-            <Skill image={cssSVG} name="CSS 3" projects={["Calculator", "Punk IPA API"]}/>
+            <Skill image={cssSVG} name="CSS 3" projects={["Calculator", "Punk IPA API"]} links={["https://github.com/J-dance/My-Calculator", "https://github.com/J-dance/Punk-IPA-API"]}/>
 
             {/* React */}
-            <Skill image={reactSVG} name="React" projects={["KnoWaste MVP", "This site!"]}/>
+            <Skill image={reactSVG} name="React" projects={["KnoWaste MVP", "This site!"]} links={["https://github.com/J-dance/KnoWaste","https://github.com/J-dance/My-React_Portfolio"]}/>
 
             {/* node */}
-            <Skill image={nodeSVG} name="Node.js" projects={["ArubaChat (..in progress)", "Pubs API (..in progress)"]}/>
+            <Skill image={nodeSVG} name="Node.js" projects={["ArubaChat (..in progress)", "Pubs API (..in progress)"]} links={["https://github.com/J-dance/Aruba-Chat-Rooms", "https://github.com/J-dance/MVC-node-API"]} />
 
             {/* TS */}
-            <Skill image={tsSVG} name="TypeScript" projects={["Pubs API (..in progress)"]}/>
+            <Skill image={tsSVG} name="TypeScript" projects={["Pubs API (..in progress)"]} links={["https://github.com/J-dance/MVC-node-API"]} />
 
             {/* Sass */}
-            <Skill image={sassSVG} name="SASS/SCSS" projects={["Calculator", "KnoWaste MVP"]}/>
+            <Skill image={sassSVG} name="SASS/SCSS" projects={["Calculator", "KnoWaste MVP"]} links={["https://github.com/J-dance/My-Calculator", "https://github.com/J-dance/KnoWaste"]}/>
 
             {/* Angular */}
-            <Skill image={angularSVG} name="Angular" projects={["BànhG-mì (..in progress)"]}/>
+            <Skill image={angularSVG} name="Angular" projects={["BànhG-mì (..in progress)"]} links={["https://github.com/J-dance/BanhG-mi-Street-Food"]} />
 
             {/* Next */}
-            <Skill image={nextSVG} name="Next" projects={["Danceability App (..in progress)"]}/>
+            <Skill image={nextSVG} name="Next" projects={["Danceability App (..in progress)"]} links={["https://github.com/J-dance/Danceablity-Music-App"]} />
 
             {/* MongoDb */}
-            <Skill image={mongodbSVG} name="MongoDB" projects={["Pubs API (..in progress)"]}/>
+            <Skill image={mongodbSVG} name="MongoDB" projects={["Pubs API (..in progress)"]} links={["https://github.com/J-dance/MVC-node-API"]} />
 
             {/* firebase */}
-            <Skill image={firebaseSVG} name="Firebase" projects={["KnoWaste MVP"]}/>
+            <Skill image={firebaseSVG} name="Firebase" projects={["KnoWaste MVP"]} links={["https://github.com/J-dance/KnoWaste"]} />
 
             {/* github */}
-            <Skill image={gitSVG} name="GitHub" projects={["My repository", "KnoWaste: Agile project with version control"]}/>            
+            <Skill image={gitSVG} name="GitHub" projects={["My repository", "KnoWaste: Agile project with version control"]} links={["https://github.com/J-dance?tab=repositories", "https://github.com/J-dance/KnoWaste"]} />            
 
             {/* testing */}
-            <Skill image={testSVG} name="Testing" projects={["Calculator: e2e testing with Cypress", "Morse Code Translator: unit testing with Jest"]}/>            
+            <Skill image={testSVG} name="Testing" projects={["Calculator: e2e testing with Cypress", "Morse Code Translator: unit testing with Jest"]} links={["https://github.com/J-dance/My-Calculator", "https://github.com/J-dance/Morse-Code-Translator"]}/>            
 
+          </div>
+          <div className={styles.cv}>
+            <a href={Pdf} target="_blank">
+              <h1>CV</h1>
+            </a>
           </div>
         </section>
       </section>
