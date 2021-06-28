@@ -72,7 +72,7 @@ function About() {
             <Skill image={sassSVG} name="SASS/SCSS" projects={["Calculator", "KnoWaste MVP"]} links={["https://github.com/J-dance/My-Calculator", "https://github.com/J-dance/KnoWaste"]}/>
 
             {/* Angular */}
-            <Skill image={angularSVG} name="Angular" projects={["BànhG-mì (..in progress)"]} links={["https://github.com/J-dance/BanhG-mi-Street-Food"]} />
+            <Skill image={angularSVG} name="Angular" projects={["BànhG-mì (..in progress)"]} links={["https://github.com/J-dance/BanhG-mi-app.git"]} />
 
             {/* Next */}
             <Skill image={nextSVG} name="Next" projects={["Danceability App (..in progress)"]} links={["https://github.com/J-dance/Danceablity-Music-App"]} />
